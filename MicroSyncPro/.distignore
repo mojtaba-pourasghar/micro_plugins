@@ -1,0 +1,10 @@
+/vendor
+/tests
+/node_modules
+.git
+.distignore
+composer.json
+composer.lock
+phpunit.xml.dist
+phpcs.xml.dist
+.phpunit.result.cache

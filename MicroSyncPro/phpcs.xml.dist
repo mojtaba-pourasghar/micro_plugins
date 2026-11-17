@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ruleset name="Micro Sync Pro">
+	<description>Coding standards for Micro Sync Pro.</description>
+	<file>.</file>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/tests/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+	<config name="testVersion" value="7.4-"/>
+	<config name="minimum_wp_version" value="6.5"/>
+	<rule ref="PHPCompatibilityWP"/>
+	<rule ref="WordPress.Security">
+		<!-- Exception messages are plain text that is always escaped (esc_html) when rendered. -->
+		<exclude name="WordPress.Security.EscapeOutput.ExceptionNotEscaped"/>
+	</rule>
+	<rule ref="WordPress.DB">
+		<!-- The plugin's own tables (runs, items, logs, sources) are queried directly by design;
+		     results are per-run, frequently changing data that must not be served from object cache. -->
+		<exclude name="WordPress.DB.DirectDatabaseQuery.DirectQuery"/>
+		<exclude name="WordPress.DB.DirectDatabaseQuery.NoCaching"/>
+	</rule>
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="micro-sync-pro"/>
+			</property>
+		</properties>
+	</rule>
+	<rule ref="WordPress.WP.DeprecatedFunctions"/>
+	<rule ref="WordPress.WP.DeprecatedClasses"/>
+	<rule ref="WordPress.WP.DeprecatedParameters"/>
+	<rule ref="WordPress.PHP.DevelopmentFunctions"/>
+	<rule ref="WordPress.PHP.DontExtract"/>
+	<rule ref="WordPress.PHP.RestrictedPHPFunctions"/>
+	<rule ref="Generic.PHP.Syntax"/>
+</ruleset>

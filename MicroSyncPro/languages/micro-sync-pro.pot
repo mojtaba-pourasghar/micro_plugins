@@ -1,0 +1,2133 @@
+# Copyright (C) 2026 Micro Studio
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Micro Sync Pro 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Micro Studio\n"
+"Language-Team: Micro Studio\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-17T09:03:26+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: micro-sync-pro\n"
+
+#. Plugin Name of the plugin
+#: micro-sync-pro.php
+#: src/Admin/Admin.php:52
+#: src/Admin/Admin.php:71
+#: src/Dependencies.php:45
+#: views/dashboard.php:21
+msgid "Micro Sync Pro"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: micro-sync-pro.php
+msgid "https://example.com/micro-sync-pro"
+msgstr ""
+
+#. Description of the plugin
+#: micro-sync-pro.php
+msgid "Professional WooCommerce product price and inventory synchronization from CSV, XLSX, and remote data sources."
+msgstr ""
+
+#. Author of the plugin
+#: micro-sync-pro.php
+msgid "Micro Studio"
+msgstr ""
+
+#. translators: %s: required PHP version.
+#: micro-sync-pro.php:37
+#, php-format
+msgid "Micro Sync Pro requires PHP %s or newer. The plugin is not running."
+msgstr ""
+
+#: src/Admin/Actions.php:74
+#: src/Admin/Ajax.php:49
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: src/Admin/Actions.php:109
+#: src/Admin/Actions.php:237
+#: src/Admin/Actions.php:263
+#: src/Admin/Actions.php:280
+#: src/Admin/Pages.php:152
+#: src/Sync/RunManager.php:70
+msgid "The data source does not exist."
+msgstr ""
+
+#: src/Admin/Actions.php:117
+msgid "Enter a name for the data source."
+msgstr ""
+
+#: src/Admin/Actions.php:121
+msgid "Select a valid source type."
+msgstr ""
+
+#: src/Admin/Actions.php:160
+msgid "Upload a file for this data source."
+msgstr ""
+
+#: src/Admin/Actions.php:189
+msgid "Data source saved and columns detected. Review the field mapping."
+msgstr ""
+
+#: src/Admin/Actions.php:192
+msgid "Data source saved, but its columns could not be read yet."
+msgstr ""
+
+#: src/Admin/Actions.php:195
+msgid "Data source saved."
+msgstr ""
+
+#: src/Admin/Actions.php:211
+msgid "No columns were found in the source."
+msgstr ""
+
+#: src/Admin/Actions.php:241
+msgid "This source has an active synchronization. Cancel it first."
+msgstr ""
+
+#: src/Admin/Actions.php:252
+msgid "Data source deleted. Its history is kept."
+msgstr ""
+
+#. translators: %d: number of columns.
+#: src/Admin/Actions.php:268
+#, php-format
+msgid "%d columns detected."
+msgstr ""
+
+#: src/Admin/Actions.php:292
+msgid "Field mapping saved. You can now preview the synchronization."
+msgstr ""
+
+#: src/Admin/Actions.php:307
+msgid "Synchronization started."
+msgstr ""
+
+#: src/Admin/Actions.php:307
+msgid "Preview started. No product will be changed."
+msgstr ""
+
+#: src/Admin/Actions.php:321
+msgid "Applying the previewed changes."
+msgstr ""
+
+#: src/Admin/Actions.php:332
+msgid "Cancellation requested. The run stops after the current batch."
+msgstr ""
+
+#: src/Admin/Actions.php:347
+msgid "The run was resumed from its last completed batch."
+msgstr ""
+
+#: src/Admin/Actions.php:362
+msgid "Rollback started."
+msgstr ""
+
+#. translators: %s: source name.
+#: src/Admin/Actions.php:381
+#, php-format
+msgid "\"%s\" needs a complete field mapping before it can be scheduled."
+msgstr ""
+
+#: src/Admin/Actions.php:392
+msgid "Schedules saved."
+msgstr ""
+
+#: src/Admin/Actions.php:422
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Actions.php:433
+#: src/Admin/Ajax.php:61
+#: src/Admin/Pages.php:295
+msgid "The run does not exist."
+msgstr ""
+
+#. translators: 1: logs, 2: runs, 3: files.
+#: src/Admin/Actions.php:474
+#, php-format
+msgid "Cleanup finished: %1$d log entries, %2$d runs and %3$d files removed."
+msgstr ""
+
+#: src/Admin/Admin.php:53
+msgid "Micro Sync"
+msgstr ""
+
+#: src/Admin/Admin.php:93
+#: src/Admin/View.php:108
+msgid "Queued"
+msgstr ""
+
+#: src/Admin/Admin.php:94
+#: src/Admin/View.php:109
+msgid "Running"
+msgstr ""
+
+#: src/Admin/Admin.php:95
+msgid "Cancelling…"
+msgstr ""
+
+#: src/Admin/Admin.php:96
+#: src/Admin/View.php:111
+msgid "Completed"
+msgstr ""
+
+#: src/Admin/Admin.php:97
+#: src/Admin/View.php:112
+#: views/partial-progress.php:45
+#: views/partial-runs-table.php:37
+msgid "Failed"
+msgstr ""
+
+#: src/Admin/Admin.php:98
+#: src/Admin/View.php:113
+msgid "Cancelled"
+msgstr ""
+
+#: src/Admin/Admin.php:99
+#: src/Admin/View.php:114
+msgid "Interrupted"
+msgstr ""
+
+#: src/Admin/Admin.php:100
+msgid "Reading and validating the source…"
+msgstr ""
+
+#: src/Admin/Admin.php:101
+msgid "Processing records…"
+msgstr ""
+
+#: src/Admin/Admin.php:102
+msgid "Finishing…"
+msgstr ""
+
+#: src/Admin/Admin.php:103
+msgid "Connection problem. Retrying…"
+msgstr ""
+
+#: src/Admin/Admin.php:104
+#: views/run-detail.php:74
+msgid "Stop this synchronization after the current batch?"
+msgstr ""
+
+#: src/Admin/Admin.php:105
+msgid "Finished. Loading results…"
+msgstr ""
+
+#: src/Admin/Admin.php:118
+#: src/Admin/View.php:51
+#: views/settings.php:15
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Admin.php:119
+#: src/Admin/View.php:44
+msgid "Dashboard"
+msgstr ""
+
+#: src/Admin/Ajax.php:46
+msgid "Your session has expired. Reload the page."
+msgstr ""
+
+#: src/Admin/Pages.php:40
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: src/Admin/Pages.php:111
+msgid "WooCommerce"
+msgstr ""
+
+#: src/Admin/Pages.php:116
+msgid "Background processing"
+msgstr ""
+
+#: src/Admin/Pages.php:117
+msgid "Action Scheduler"
+msgstr ""
+
+#: src/Admin/Pages.php:117
+msgid "WP-Cron (fallback)"
+msgstr ""
+
+#: src/Admin/Pages.php:121
+msgid "Order storage (HPOS)"
+msgstr ""
+
+#: src/Admin/Pages.php:122
+msgid "High-performance order storage — compatible"
+msgstr ""
+
+#: src/Admin/Pages.php:122
+msgid "WordPress posts storage — compatible"
+msgstr ""
+
+#: src/Admin/Pages.php:126
+msgid "Excel (XLSX) support"
+msgstr ""
+
+#: src/Admin/Pages.php:127
+msgid "Available"
+msgstr ""
+
+#: src/Admin/Pages.php:127
+msgid "Unavailable (PHP zip/xmlreader missing)"
+msgstr ""
+
+#: src/Admin/Pages.php:131
+msgid "Protected storage"
+msgstr ""
+
+#: src/Admin/Pages.php:132
+msgid "Writable"
+msgstr ""
+
+#: src/Admin/Pages.php:132
+msgid "Not writable"
+msgstr ""
+
+#: src/Admin/Pages.php:136
+msgid "WP-Cron"
+msgstr ""
+
+#: src/Admin/Pages.php:137
+msgid "Disabled (use a server cron job)"
+msgstr ""
+
+#: src/Admin/Pages.php:137
+#: views/source-form.php:55
+msgid "Enabled"
+msgstr ""
+
+#: src/Admin/View.php:45
+#: views/sources.php:19
+msgid "Data Sources"
+msgstr ""
+
+#: src/Admin/View.php:46
+#: views/sync.php:20
+msgid "Synchronization"
+msgstr ""
+
+#: src/Admin/View.php:47
+#: views/mapping.php:20
+msgid "Field Mapping"
+msgstr ""
+
+#: src/Admin/View.php:48
+#: views/schedule.php:18
+#: views/sources.php:42
+msgid "Schedule"
+msgstr ""
+
+#: src/Admin/View.php:49
+#: views/history.php:20
+msgid "History"
+msgstr ""
+
+#: src/Admin/View.php:50
+#: views/logs.php:18
+msgid "Logs"
+msgstr ""
+
+#: src/Admin/View.php:79
+msgid "Micro Sync Pro sections"
+msgstr ""
+
+#: src/Admin/View.php:110
+msgid "Cancelling"
+msgstr ""
+
+#: src/Admin/View.php:115
+#: src/Admin/View.php:169
+#: views/partial-progress.php:42
+#: views/partial-runs-table.php:32
+msgid "Updated"
+msgstr ""
+
+#: src/Admin/View.php:116
+#: views/partial-progress.php:42
+msgid "Will update"
+msgstr ""
+
+#: src/Admin/View.php:117
+#: views/partial-progress.php:43
+#: views/partial-runs-table.php:34
+#: views/run-detail.php:41
+msgid "Unchanged"
+msgstr ""
+
+#: src/Admin/View.php:118
+#: views/partial-progress.php:44
+#: views/partial-runs-table.php:36
+msgid "Skipped"
+msgstr ""
+
+#: src/Admin/View.php:119
+#: src/Admin/View.php:182
+#: views/partial-progress.php:42
+msgid "Reverted"
+msgstr ""
+
+#: src/Admin/View.php:141
+#: views/sync.php:46
+msgid "Preview (dry run)"
+msgstr ""
+
+#: src/Admin/View.php:142
+msgid "Apply"
+msgstr ""
+
+#: src/Admin/View.php:143
+msgid "Rollback"
+msgstr ""
+
+#: src/Admin/View.php:155
+msgid "Manual"
+msgstr ""
+
+#: src/Admin/View.php:156
+msgid "Scheduled"
+msgstr ""
+
+#: src/Admin/View.php:157
+msgid "CLI"
+msgstr ""
+
+#: src/Admin/View.php:170
+msgid "Change detected"
+msgstr ""
+
+#: src/Admin/View.php:171
+msgid "Already up to date"
+msgstr ""
+
+#: src/Admin/View.php:172
+msgid "Nothing applicable to change"
+msgstr ""
+
+#: src/Admin/View.php:173
+msgid "Empty SKU"
+msgstr ""
+
+#: src/Admin/View.php:174
+msgid "Duplicate SKU in source"
+msgstr ""
+
+#: src/Admin/View.php:175
+msgid "No matching product"
+msgstr ""
+
+#: src/Admin/View.php:176
+msgid "Ambiguous match"
+msgstr ""
+
+#: src/Admin/View.php:177
+msgid "Unsupported product type"
+msgstr ""
+
+#: src/Admin/View.php:178
+msgid "Invalid value"
+msgstr ""
+
+#: src/Admin/View.php:179
+msgid "Save error"
+msgstr ""
+
+#: src/Admin/View.php:180
+msgid "Product load error"
+msgstr ""
+
+#: src/Admin/View.php:181
+msgid "Unexpected error"
+msgstr ""
+
+#: src/Admin/View.php:183
+msgid "Changed since sync"
+msgstr ""
+
+#: src/Admin/View.php:184
+msgid "Product deleted"
+msgstr ""
+
+#: src/Admin/View.php:185
+msgid "Nothing to revert"
+msgstr ""
+
+#: src/Admin/View.php:196
+#: src/Mapping/FieldMapper.php:33
+msgid "Regular price"
+msgstr ""
+
+#: src/Admin/View.php:197
+#: src/Mapping/FieldMapper.php:34
+msgid "Sale price"
+msgstr ""
+
+#: src/Admin/View.php:198
+#: src/Mapping/FieldMapper.php:35
+msgid "Stock quantity"
+msgstr ""
+
+#: src/Admin/View.php:199
+#: src/Mapping/FieldMapper.php:36
+msgid "Stock status"
+msgstr ""
+
+#: src/Admin/View.php:200
+msgid "Manage stock"
+msgstr ""
+
+#: src/Admin/View.php:216
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/View.php:216
+msgid "No"
+msgstr ""
+
+#. translators: %s: number of items.
+#: src/Admin/View.php:307
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: required WooCommerce version, 2: installed version.
+#: src/Dependencies.php:38
+#, php-format
+msgid "Micro Sync Pro requires WooCommerce %1$s or newer (installed: %2$s). Synchronization is disabled until WooCommerce is updated."
+msgstr ""
+
+#: src/Dependencies.php:43
+msgid "Micro Sync Pro requires WooCommerce to be installed and active. Synchronization is disabled until WooCommerce is activated."
+msgstr ""
+
+#: src/Mapping/FieldMapper.php:32
+msgid "SKU (matching key)"
+msgstr ""
+
+#: src/Mapping/FieldMapper.php:94
+msgid "The field mapping is invalid."
+msgstr ""
+
+#. translators: %s: column name.
+#: src/Mapping/FieldMapper.php:108
+#, php-format
+msgid "The column \"%s\" does not exist in the source."
+msgstr ""
+
+#: src/Mapping/FieldMapper.php:115
+msgid "A source column must be mapped to SKU."
+msgstr ""
+
+#: src/Mapping/FieldMapper.php:132
+msgid "Select at least one field to synchronize besides SKU."
+msgstr ""
+
+#: src/Parser/CsvParser.php:48
+#: src/Parser/JsonParser.php:43
+#: src/Parser/JsonParser.php:47
+#: src/Parser/XlsxParser.php:53
+msgid "The source file cannot be read."
+msgstr ""
+
+#: src/Parser/CsvParser.php:52
+msgid "The source file cannot be opened."
+msgstr ""
+
+#: src/Parser/CsvParser.php:118
+msgid "The CSV file has no header row."
+msgstr ""
+
+#. translators: %s: JSON error message.
+#: src/Parser/JsonParser.php:80
+#, php-format
+msgid "Invalid JSON: %s"
+msgstr ""
+
+#: src/Parser/JsonParser.php:88
+msgid "The records path is not valid."
+msgstr ""
+
+#: src/Parser/JsonParser.php:92
+msgid "The records path was not found in the JSON document."
+msgstr ""
+
+#: src/Parser/JsonParser.php:98
+msgid "The JSON records must be an array of objects."
+msgstr ""
+
+#: src/Parser/JsonParser.php:107
+msgid "The JSON records must be an array of objects. Set the records path (for example \"data.items\")."
+msgstr ""
+
+#: src/Parser/ParserFactory.php:32
+msgid "Unsupported file format."
+msgstr ""
+
+#: src/Parser/XlsxParser.php:50
+msgid "XLSX support requires the PHP zip and xmlreader extensions."
+msgstr ""
+
+#: src/Parser/XlsxParser.php:57
+#: src/Security/UploadHandler.php:126
+msgid "The file is not a valid XLSX workbook."
+msgstr ""
+
+#: src/Parser/XlsxParser.php:65
+msgid "The selected worksheet does not exist."
+msgstr ""
+
+#: src/Parser/XlsxParser.php:71
+msgid "The worksheet cannot be read."
+msgstr ""
+
+#: src/Parser/XlsxParser.php:116
+msgid "The worksheet has no header row."
+msgstr ""
+
+#: src/Parser/XlsxParser.php:288
+msgid "The workbook contains too many distinct text values."
+msgstr ""
+
+#. translators: 1: price, 2: min, 3: max.
+#: src/Pricing/PricingEngine.php:100
+#, php-format
+msgid "Calculated price %1$s is outside the allowed range (%2$s – %3$s); field skipped."
+msgstr ""
+
+#. translators: 1: calculated price, 2: limited price.
+#: src/Pricing/PricingEngine.php:110
+#, php-format
+msgid "Calculated price %1$s was limited to %2$s."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:109
+#: src/Repository/SourceRepository.php:116
+msgid "The source could not be saved."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:164
+msgid "The records path may contain only letters, digits, \"_\", \"-\" and dots."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:174
+msgid "The price multiplier must be a positive number."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:188
+msgid "A remote URL is required for this source type."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:195
+#: src/Security/UrlValidator.php:107
+msgid "The URL is not valid."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:207
+msgid "The custom header name is not valid."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:219
+msgid "The credential contains invalid characters."
+msgstr ""
+
+#: src/Repository/SourceRepository.php:226
+msgid "Enter the credential for the selected authentication method."
+msgstr ""
+
+#: src/Scheduling/JobQueue.php:153
+#: src/Sync/SyncEngine.php:104
+msgid "Cancelled by user."
+msgstr ""
+
+#: src/Scheduling/JobQueue.php:162
+msgid "The run stopped responding and was marked as interrupted. It can be resumed from the History page."
+msgstr ""
+
+#: src/Scheduling/Scheduler.php:60
+#: views/sources.php:54
+msgid "Disabled"
+msgstr ""
+
+#: src/Scheduling/Scheduler.php:61
+msgid "Every hour"
+msgstr ""
+
+#: src/Scheduling/Scheduler.php:62
+msgid "Twice a day"
+msgstr ""
+
+#: src/Scheduling/Scheduler.php:63
+msgid "Once a day"
+msgstr ""
+
+#: src/Scheduling/Scheduler.php:64
+msgid "Once a week"
+msgstr ""
+
+#: src/Scheduling/Scheduler.php:90
+msgid "Every 10 minutes (Micro Sync Pro)"
+msgstr ""
+
+#: src/Security/UploadHandler.php:56
+msgid "No file was uploaded."
+msgstr ""
+
+#: src/Security/UploadHandler.php:59
+#: src/Security/UploadHandler.php:74
+msgid "The uploaded file exceeds the maximum allowed size."
+msgstr ""
+
+#: src/Security/UploadHandler.php:62
+msgid "The file upload failed. Please try again."
+msgstr ""
+
+#: src/Security/UploadHandler.php:67
+msgid "Invalid upload."
+msgstr ""
+
+#: src/Security/UploadHandler.php:71
+msgid "The uploaded file is empty."
+msgstr ""
+
+#: src/Security/UploadHandler.php:83
+#: src/Sources/RemoteFetcher.php:72
+msgid "The storage directory could not be created."
+msgstr ""
+
+#: src/Security/UploadHandler.php:88
+msgid "The uploaded file could not be saved."
+msgstr ""
+
+#: src/Security/UploadHandler.php:110
+msgid "Only .csv files are allowed for this source."
+msgstr ""
+
+#: src/Security/UploadHandler.php:118
+#: src/Security/UploadHandler.php:128
+msgid "The file type is not allowed."
+msgstr ""
+
+#: src/Security/UploadHandler.php:120
+msgid "The file does not look like a CSV text file."
+msgstr ""
+
+#: src/Security/UploadHandler.php:124
+msgid "Only .xlsx files are allowed for this source."
+msgstr ""
+
+#: src/Security/UrlValidator.php:97
+msgid "The URL is empty."
+msgstr ""
+
+#: src/Security/UrlValidator.php:100
+msgid "The URL is too long."
+msgstr ""
+
+#: src/Security/UrlValidator.php:103
+msgid "The URL contains invalid characters."
+msgstr ""
+
+#: src/Security/UrlValidator.php:111
+msgid "Only http and https URLs are allowed."
+msgstr ""
+
+#: src/Security/UrlValidator.php:114
+msgid "Credentials inside the URL are not allowed. Use the authentication fields instead."
+msgstr ""
+
+#: src/Security/UrlValidator.php:118
+msgid "The URL port is not allowed."
+msgstr ""
+
+#: src/Security/UrlValidator.php:127
+#: src/Security/UrlValidator.php:149
+msgid "The URL host name could not be resolved."
+msgstr ""
+
+#: src/Security/UrlValidator.php:134
+#: src/Security/UrlValidator.php:144
+#: src/Security/UrlValidator.php:153
+msgid "Requests to private, loopback or reserved addresses are not allowed."
+msgstr ""
+
+#: src/Security/UrlValidator.php:141
+msgid "The URL host name is not valid."
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:69
+msgid "Unsupported remote format."
+msgstr ""
+
+#. translators: %s: error message.
+#: src/Sources/RemoteFetcher.php:123
+#, php-format
+msgid "The remote source could not be downloaded: %s"
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Sources/RemoteFetcher.php:143
+#, php-format
+msgid "The remote server responded with HTTP status %d."
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:156
+msgid "The remote source redirected too many times."
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:170
+#: src/Sources/RemoteFetcher.php:175
+msgid "The remote source returned an empty response."
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:178
+msgid "The remote response exceeds the maximum allowed size."
+msgstr ""
+
+#. translators: %s: content type.
+#: src/Sources/RemoteFetcher.php:186
+#, php-format
+msgid "Unexpected content type from the remote source: %s"
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:192
+msgid "The remote response is not a valid text document."
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:198
+msgid "The remote response is not JSON."
+msgstr ""
+
+#: src/Sources/RemoteFetcher.php:201
+msgid "The remote response is an HTML/XML page, not CSV."
+msgstr ""
+
+#: src/Sources/SourceStager.php:64
+msgid "The remote URL could not be read. Edit the source and enter the URL again."
+msgstr ""
+
+#: src/Sources/SourceStager.php:77
+msgid "No file has been uploaded for this source."
+msgstr ""
+
+#: src/Sources/SourceStager.php:128
+msgid "The field mapping for this source is incomplete. Map SKU and at least one field."
+msgstr ""
+
+#. translators: %s: list of column names.
+#: src/Sources/SourceStager.php:146
+#, php-format
+msgid "Mapped columns are missing from the source: %s"
+msgstr ""
+
+#: src/Sources/SourceStager.php:153
+msgid "The staging file could not be created."
+msgstr ""
+
+#: src/Sources/SourceStager.php:214
+#: src/Sources/SourceStager.php:218
+msgid "The staged data for this run is no longer available."
+msgstr ""
+
+#: src/Sources/SourceTypes.php:29
+msgid "CSV file upload"
+msgstr ""
+
+#: src/Sources/SourceTypes.php:30
+msgid "Remote CSV URL"
+msgstr ""
+
+#: src/Sources/SourceTypes.php:31
+msgid "Remote JSON URL / supplier API"
+msgstr ""
+
+#: src/Sources/SourceTypes.php:34
+msgid "Excel (XLSX) file upload"
+msgstr ""
+
+#. translators: %s: product type.
+#: src/Sync/ProductUpdater.php:82
+#, php-format
+msgid "Product type \"%s\" is not supported."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:133
+msgid "Prices of variable products are stored on their variations; price fields were ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:169
+msgid "Sale price is not lower than the regular price; sale price was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:184
+msgid "External products do not have stock; quantity was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:186
+msgid "Stock management is disabled in WooCommerce settings; quantity was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:189
+msgid "Stock of this variation is managed by the parent product; quantity was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:191
+msgid "Stock management is not enabled for this product; quantity was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:202
+msgid "External products are always in stock; stock status was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:204
+msgid "The stock status of variable products is derived from their variations; it was ignored."
+msgstr ""
+
+#: src/Sync/ProductUpdater.php:206
+msgid "Stock status is calculated by WooCommerce from the managed quantity; it was ignored."
+msgstr ""
+
+#. translators: %s: error message.
+#: src/Sync/ProductUpdater.php:268
+#, php-format
+msgid "WooCommerce rejected the update: %s"
+msgstr ""
+
+#: src/Sync/RollbackService.php:51
+msgid "No stored changes to revert."
+msgstr ""
+
+#: src/Sync/RollbackService.php:59
+msgid "The product no longer exists."
+msgstr ""
+
+#. translators: %s: field names.
+#: src/Sync/RollbackService.php:80
+#, php-format
+msgid "The product was modified after synchronization (%s); it was not reverted."
+msgstr ""
+
+#: src/Sync/RunManager.php:66
+msgid "Invalid run mode."
+msgstr ""
+
+#: src/Sync/RunManager.php:73
+msgid "The data source is disabled."
+msgstr ""
+
+#: src/Sync/RunManager.php:76
+msgid "Configure the field mapping for this source first."
+msgstr ""
+
+#: src/Sync/RunManager.php:105
+msgid "Only a completed preview can be applied."
+msgstr ""
+
+#: src/Sync/RunManager.php:108
+msgid "This preview has already been applied. Run a new preview."
+msgstr ""
+
+#: src/Sync/RunManager.php:111
+msgid "The preview data has expired. Run a new preview."
+msgstr ""
+
+#: src/Sync/RunManager.php:115
+msgid "The data source does not exist or is disabled."
+msgstr ""
+
+#: src/Sync/RunManager.php:119
+msgid "The preview data could not be copied."
+msgstr ""
+
+#: src/Sync/RunManager.php:161
+msgid "This run cannot be rolled back."
+msgstr ""
+
+#. translators: %d: run id.
+#: src/Sync/RunManager.php:192
+#, php-format
+msgid "Another synchronization (#%d) is already running for this source."
+msgstr ""
+
+#: src/Sync/RunManager.php:199
+msgid "The run could not be created."
+msgstr ""
+
+#: src/Sync/RunManager.php:209
+msgid "Cancelled: another run for this source started at the same time."
+msgstr ""
+
+#: src/Sync/RunManager.php:216
+#: src/Sync/RunManager.php:262
+msgid "Another synchronization is already running for this source."
+msgstr ""
+
+#: src/Sync/RunManager.php:232
+msgid "This run is not active."
+msgstr ""
+
+#: src/Sync/RunManager.php:236
+msgid "Cancelled by user before it started."
+msgstr ""
+
+#: src/Sync/RunManager.php:255
+#: src/Sync/RunManager.php:265
+msgid "Only interrupted runs can be resumed."
+msgstr ""
+
+#: src/Sync/RunManager.php:258
+msgid "The staged data of this run is no longer available; it cannot be resumed."
+msgstr ""
+
+#. translators: %s: error message.
+#: src/Sync/SyncEngine.php:133
+#, php-format
+msgid "Unexpected error: %s"
+msgstr ""
+
+#: src/Sync/SyncEngine.php:167
+msgid "The data source no longer exists."
+msgstr ""
+
+#: src/Sync/SyncEngine.php:280
+msgid "The record has no SKU."
+msgstr ""
+
+#. translators: %d: occurrences.
+#: src/Sync/SyncEngine.php:288
+#, php-format
+msgid "This SKU appears %d times in the source; all occurrences were skipped to avoid an ambiguous update."
+msgstr ""
+
+#: src/Sync/SyncEngine.php:296
+msgid "No product or variation with this SKU exists. New products are never created."
+msgstr ""
+
+#. translators: %s: product IDs.
+#: src/Sync/SyncEngine.php:304
+#, php-format
+msgid "Several products share this SKU (IDs: %s); none was updated."
+msgstr ""
+
+#: src/Sync/SyncEngine.php:313
+msgid "The matched product could not be loaded."
+msgstr ""
+
+#. translators: 1: processed, 2: updated, 3: unchanged, 4: skipped, 5: failed.
+#: src/Sync/SyncEngine.php:373
+#, php-format
+msgid "Processed %1$d records: %2$d updated, %3$d unchanged, %4$d skipped, %5$d failed."
+msgstr ""
+
+#. translators: 1: processed, 2: would update, 3: unchanged, 4: skipped, 5: failed.
+#: src/Sync/SyncEngine.php:383
+#, php-format
+msgid "Preview of %1$d records: %2$d would be updated, %3$d unchanged, %4$d skipped, %5$d failed."
+msgstr ""
+
+#. translators: 1: processed, 2: reverted, 3: skipped, 4: failed.
+#: src/Sync/SyncEngine.php:394
+#, php-format
+msgid "Rollback of %1$d products: %2$d reverted, %3$d skipped, %4$d failed."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:98
+#, php-format
+msgid "Invalid price value \"%s\"."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:106
+#, php-format
+msgid "Price cannot be negative (\"%s\")."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:113
+#, php-format
+msgid "Price is unrealistically large (\"%s\")."
+msgstr ""
+
+#: src/Validation/RecordValidator.php:119
+msgid "Price is zero. Zero prices are rejected (see Settings)."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:140
+#, php-format
+msgid "Invalid stock quantity \"%s\" (a whole number is required)."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:148
+#, php-format
+msgid "Stock quantity is out of range (\"%s\")."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:155
+#, php-format
+msgid "Negative stock quantity \"%s\" is not allowed (see Settings)."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:199
+#, php-format
+msgid "Unsupported stock status \"%s\"."
+msgstr ""
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:210
+#, php-format
+msgid "Unknown stock status \"%s\". Use instock, outofstock or onbackorder."
+msgstr ""
+
+#: views/dashboard.php:25
+msgid "Welcome to Micro Sync Pro"
+msgstr ""
+
+#: views/dashboard.php:26
+msgid "Add your first data source (CSV, Excel or a supplier URL), map its columns and run a preview. Products are matched by SKU and are never created automatically."
+msgstr ""
+
+#: views/dashboard.php:28
+msgid "Add a data source"
+msgstr ""
+
+#: views/dashboard.php:34
+msgid "Data sources"
+msgstr ""
+
+#. translators: %s: number of scheduled sources.
+#: views/dashboard.php:39
+#, php-format
+msgid "%s scheduled"
+msgstr ""
+
+#: views/dashboard.php:44
+msgid "Runs (30 days)"
+msgstr ""
+
+#. translators: %s: number of failed runs.
+#: views/dashboard.php:49
+#, php-format
+msgid "%s failed or interrupted"
+msgstr ""
+
+#: views/dashboard.php:54
+msgid "Products updated (30 days)"
+msgstr ""
+
+#: views/dashboard.php:58
+msgid "Failed records (30 days)"
+msgstr ""
+
+#: views/dashboard.php:65
+#: views/sync.php:87
+msgid "Running now"
+msgstr ""
+
+#: views/dashboard.php:74
+msgid "Recent runs"
+msgstr ""
+
+#: views/dashboard.php:76
+msgid "No synchronization has been run yet."
+msgstr ""
+
+#: views/dashboard.php:79
+msgid "View full history"
+msgstr ""
+
+#: views/dashboard.php:83
+msgid "Latest product changes"
+msgstr ""
+
+#: views/dashboard.php:85
+msgid "No product has been changed yet."
+msgstr ""
+
+#: views/dashboard.php:89
+#: views/partial-items.php:77
+msgid "SKU"
+msgstr ""
+
+#: views/dashboard.php:90
+#: views/partial-items.php:80
+msgid "Changes"
+msgstr ""
+
+#: views/dashboard.php:91
+#: views/logs.php:54
+msgid "Date"
+msgstr ""
+
+#: views/dashboard.php:114
+msgid "System status"
+msgstr ""
+
+#: views/history.php:25
+#: views/partial-runs-table.php:23
+#: views/run-detail.php:33
+msgid "Source"
+msgstr ""
+
+#: views/history.php:27
+#: views/history.php:34
+#: views/history.php:41
+#: views/logs.php:36
+#: views/partial-items.php:44
+#: views/partial-items.php:51
+msgid "All"
+msgstr ""
+
+#: views/history.php:32
+#: views/partial-runs-table.php:24
+#: views/run-detail.php:34
+msgid "Mode"
+msgstr ""
+
+#: views/history.php:39
+#: views/partial-items.php:42
+#: views/partial-runs-table.php:25
+#: views/run-detail.php:35
+#: views/schedule.php:47
+#: views/source-form.php:53
+msgid "Status"
+msgstr ""
+
+#: views/history.php:46
+#: views/logs.php:45
+#: views/partial-items.php:58
+msgid "Filter"
+msgstr ""
+
+#: views/history.php:50
+msgid "No runs found"
+msgstr ""
+
+#: views/history.php:50
+msgid "Every preview, synchronization and rollback is recorded here with its per-record results."
+msgstr ""
+
+#: views/logs.php:20
+msgid "Info"
+msgstr ""
+
+#: views/logs.php:21
+msgid "Warning"
+msgstr ""
+
+#: views/logs.php:22
+msgid "Error"
+msgstr ""
+
+#: views/logs.php:23
+msgid "Debug"
+msgstr ""
+
+#. translators: %d: number of days.
+#: views/logs.php:29
+#, php-format
+msgid "Logs are kept for %d days (see Settings). Credentials and full URLs are never logged."
+msgstr ""
+
+#: views/logs.php:34
+#: views/logs.php:55
+msgid "Level"
+msgstr ""
+
+#: views/logs.php:41
+msgid "Run ID"
+msgstr ""
+
+#: views/logs.php:43
+msgid "Search logs"
+msgstr ""
+
+#: views/logs.php:44
+msgid "Search…"
+msgstr ""
+
+#: views/logs.php:48
+msgid "No log entries"
+msgstr ""
+
+#: views/logs.php:48
+msgid "Synchronization events, warnings and errors will appear here."
+msgstr ""
+
+#: views/logs.php:56
+#: views/partial-runs-table.php:22
+msgid "Run"
+msgstr ""
+
+#: views/logs.php:57
+#: views/run-detail.php:45
+msgid "Message"
+msgstr ""
+
+#: views/logs.php:58
+msgid "Context"
+msgstr ""
+
+#: views/mapping.php:23
+#: views/schedule.php:35
+msgid "No data source"
+msgstr ""
+
+#: views/mapping.php:23
+msgid "Add a data source first; its columns are detected automatically."
+msgstr ""
+
+#: views/mapping.php:23
+#: views/schedule.php:35
+#: views/source-form.php:22
+#: views/sources.php:18
+#: views/sources.php:26
+#: views/sync.php:30
+msgid "Add data source"
+msgstr ""
+
+#: views/mapping.php:31
+#: views/schedule.php:44
+#: views/sync.php:40
+msgid "Data source"
+msgstr ""
+
+#: views/mapping.php:37
+msgid "Select"
+msgstr ""
+
+#: views/mapping.php:41
+msgid "Detected columns"
+msgstr ""
+
+#: views/mapping.php:43
+msgid "No columns detected yet."
+msgstr ""
+
+#: views/mapping.php:55
+msgid "Reading source…"
+msgstr ""
+
+#: views/mapping.php:55
+msgid "Re-read columns from source"
+msgstr ""
+
+#: views/mapping.php:61
+msgid "Map columns to WooCommerce fields"
+msgstr ""
+
+#: views/mapping.php:63
+msgid "A mapping was suggested from the column names. Review it and save."
+msgstr ""
+
+#: views/mapping.php:65
+msgid "The mapping is incomplete: map SKU and enable at least one field."
+msgstr ""
+
+#: views/mapping.php:74
+#: views/sources.php:79
+msgid "Synchronize"
+msgstr ""
+
+#: views/mapping.php:75
+msgid "WooCommerce field"
+msgstr ""
+
+#: views/mapping.php:76
+msgid "Source column"
+msgstr ""
+
+#: views/mapping.php:77
+msgid "Example value"
+msgstr ""
+
+#: views/mapping.php:91
+msgid "Always used for matching"
+msgstr ""
+
+#. translators: %s: field label.
+#: views/mapping.php:97
+#, php-format
+msgid "Synchronize %s"
+msgstr ""
+
+#: views/mapping.php:105
+msgid "— Not mapped —"
+msgstr ""
+
+#: views/mapping.php:117
+msgid "Only enabled fields are ever written. Products are matched by exact SKU (simple products and variations); unmatched rows are reported and no products are created."
+msgstr ""
+
+#: views/mapping.php:119
+msgid "Save mapping"
+msgstr ""
+
+#: views/mapping.php:121
+msgid "Go to synchronization"
+msgstr ""
+
+#: views/mapping.php:128
+msgid "Source preview (first rows)"
+msgstr ""
+
+#: views/partial-changes.php:28
+msgid "changed to"
+msgstr ""
+
+#: views/partial-items.php:24
+msgid "Record results"
+msgstr ""
+
+#: views/partial-items.php:49
+msgid "Reason"
+msgstr ""
+
+#: views/partial-items.php:56
+msgid "Search SKU"
+msgstr ""
+
+#: views/partial-items.php:57
+msgid "Search SKU…"
+msgstr ""
+
+#: views/partial-items.php:66
+msgid "Results appear here as records are processed."
+msgstr ""
+
+#: views/partial-items.php:67
+msgid "No records match the current filter."
+msgstr ""
+
+#: views/partial-items.php:76
+msgid "Row"
+msgstr ""
+
+#: views/partial-items.php:78
+msgid "Product"
+msgstr ""
+
+#: views/partial-items.php:79
+msgid "Result"
+msgstr ""
+
+#: views/partial-items.php:81
+#: views/partial-progress.php:51
+msgid "Details"
+msgstr ""
+
+#. translators: 1: run id, 2: mode, 3: source name.
+#: views/partial-progress.php:23
+#, php-format
+msgid "Run #%1$d — %2$s — %3$s"
+msgstr ""
+
+#. translators: 1: run id, 2: mode, 3: source name.
+#: views/partial-progress.php:23
+#: views/partial-runs-table.php:49
+#: views/run-detail.php:33
+msgid "(deleted source)"
+msgstr ""
+
+#: views/partial-progress.php:28
+msgid "Synchronization progress"
+msgstr ""
+
+#. translators: 1: processed, 2: total.
+#: views/partial-progress.php:36
+#, php-format
+msgid "%1$s of %2$s records"
+msgstr ""
+
+#: views/partial-progress.php:50
+#: views/run-detail.php:78
+#: views/source-form.php:225
+msgid "Cancel"
+msgstr ""
+
+#: views/partial-runs-table.php:27
+#: views/run-detail.php:36
+msgid "Trigger"
+msgstr ""
+
+#: views/partial-runs-table.php:28
+msgid "Started"
+msgstr ""
+
+#: views/partial-runs-table.php:29
+msgid "Finished"
+msgstr ""
+
+#: views/partial-runs-table.php:30
+msgid "Total"
+msgstr ""
+
+#: views/partial-runs-table.php:46
+#: views/run-detail.php:32
+msgid "Execution ID"
+msgstr ""
+
+#. translators: %d: run id.
+#: views/run-detail.php:18
+#, php-format
+msgid "Run #%d"
+msgstr ""
+
+#: views/run-detail.php:22
+msgid "Back to history"
+msgstr ""
+
+#: views/run-detail.php:29
+msgid "Summary"
+msgstr ""
+
+#: views/run-detail.php:37
+msgid "Start time"
+msgstr ""
+
+#: views/run-detail.php:38
+msgid "End time"
+msgstr ""
+
+#: views/run-detail.php:39
+msgid "Total records"
+msgstr ""
+
+#: views/run-detail.php:40
+msgid "Would be updated"
+msgstr ""
+
+#: views/run-detail.php:40
+msgid "Successful updates"
+msgstr ""
+
+#: views/run-detail.php:42
+msgid "Skipped records"
+msgstr ""
+
+#: views/run-detail.php:43
+msgid "Failed records"
+msgstr ""
+
+#: views/run-detail.php:48
+msgid "Rolled back run"
+msgstr ""
+
+#: views/run-detail.php:48
+msgid "Based on preview"
+msgstr ""
+
+#: views/run-detail.php:51
+msgid "Rolled back by"
+msgstr ""
+
+#: views/run-detail.php:58
+msgid "Restore the previous values of all products updated by this run? Products changed since then are skipped."
+msgstr ""
+
+#: views/run-detail.php:62
+msgid "Roll back this run"
+msgstr ""
+
+#: views/run-detail.php:70
+msgid "Resume"
+msgstr ""
+
+#: views/run-detail.php:82
+msgid "Review and apply"
+msgstr ""
+
+#: views/run-detail.php:88
+msgid "Export results (CSV)"
+msgstr ""
+
+#: views/run-detail.php:90
+msgid "View logs"
+msgstr ""
+
+#: views/schedule.php:22
+msgid "Scheduled synchronizations apply changes directly (no preview) using the current mapping and settings. A source is never synchronized twice at the same time; if a run is still active, the scheduled run is skipped and logged."
+msgstr ""
+
+#: views/schedule.php:28
+msgid "Runner: WooCommerce Action Scheduler."
+msgstr ""
+
+#: views/schedule.php:29
+msgid "Runner: WP-Cron. On low-traffic sites, configure a real server cron job that calls wp-cron.php for reliable timing."
+msgstr ""
+
+#: views/schedule.php:35
+msgid "Add a data source before scheduling."
+msgstr ""
+
+#: views/schedule.php:45
+msgid "Frequency"
+msgstr ""
+
+#: views/schedule.php:46
+msgid "Next run"
+msgstr ""
+
+#: views/schedule.php:65
+#: views/sources.php:61
+msgid "Ready"
+msgstr ""
+
+#: views/schedule.php:67
+msgid "Source disabled"
+msgstr ""
+
+#: views/schedule.php:69
+msgid "Mapping incomplete"
+msgstr ""
+
+#: views/schedule.php:77
+msgid "Save schedules"
+msgstr ""
+
+#: views/settings.php:35
+msgid "Pricing rules"
+msgstr ""
+
+#: views/settings.php:36
+msgid "Final price = supplier price × source multiplier × (1 + margin %), then rounded and limited to the min/max range."
+msgstr ""
+
+#: views/settings.php:39
+msgid "Profit margin (%)"
+msgstr ""
+
+#: views/settings.php:43
+msgid "Minimum price"
+msgstr ""
+
+#: views/settings.php:44
+#: views/settings.php:48
+msgid "No limit"
+msgstr ""
+
+#: views/settings.php:47
+msgid "Maximum price"
+msgstr ""
+
+#: views/settings.php:51
+msgid "When a price is out of range"
+msgstr ""
+
+#: views/settings.php:54
+msgid "Use the nearest limit"
+msgstr ""
+
+#: views/settings.php:55
+msgid "Do not update the price"
+msgstr ""
+
+#: views/settings.php:60
+msgid "Rounding"
+msgstr ""
+
+#: views/settings.php:65
+msgid "No rounding (store decimals)"
+msgstr ""
+
+#: views/settings.php:77
+msgid "Rounding direction"
+msgstr ""
+
+#: views/settings.php:79
+msgid "Nearest"
+msgstr ""
+
+#: views/settings.php:80
+msgid "Up"
+msgstr ""
+
+#: views/settings.php:81
+msgid "Down"
+msgstr ""
+
+#: views/settings.php:86
+#: views/source-form.php:212
+msgid "Options"
+msgstr ""
+
+#: views/settings.php:89
+msgid "Apply margin and limits to sale prices too"
+msgstr ""
+
+#: views/settings.php:90
+msgid "Accept zero prices from the source"
+msgstr ""
+
+#: views/settings.php:91
+msgid "Accept negative stock quantities"
+msgstr ""
+
+#: views/settings.php:99
+msgid "Category rules"
+msgstr ""
+
+#: views/settings.php:100
+msgid "Override the margin and limits per product category. Rules are checked from top to bottom; the first rule matching a product (or its parent category, when enabled) is used. Variations use their parent product’s categories. Empty fields fall back to the global values."
+msgstr ""
+
+#: views/settings.php:102
+msgid "No product categories exist yet."
+msgstr ""
+
+#: views/settings.php:108
+#: views/settings.php:131
+msgid "Category"
+msgstr ""
+
+#: views/settings.php:109
+#: views/settings.php:139
+msgid "Margin (%)"
+msgstr ""
+
+#: views/settings.php:110
+#: views/settings.php:140
+msgid "Min price"
+msgstr ""
+
+#: views/settings.php:111
+#: views/settings.php:141
+msgid "Max price"
+msgstr ""
+
+#: views/settings.php:112
+#: views/settings.php:142
+msgid "Include subcategories"
+msgstr ""
+
+#: views/settings.php:113
+#: views/settings.php:143
+msgid "Remove"
+msgstr ""
+
+#: views/settings.php:133
+msgid "— Select —"
+msgstr ""
+
+#: views/settings.php:149
+msgid "Add rule"
+msgstr ""
+
+#: views/settings.php:154
+msgid "Processing"
+msgstr ""
+
+#: views/settings.php:157
+msgid "Batch size"
+msgstr ""
+
+#: views/settings.php:158
+msgid "Records per batch. Lower it on slow hosts."
+msgstr ""
+
+#: views/settings.php:161
+msgid "Time per background slice (seconds)"
+msgstr ""
+
+#: views/settings.php:165
+msgid "Maximum upload size (MB)"
+msgstr ""
+
+#. translators: %s: server limit.
+#: views/settings.php:170
+#, php-format
+msgid "Server limit: %s"
+msgstr ""
+
+#: views/settings.php:175
+msgid "Maximum remote download size (MB)"
+msgstr ""
+
+#: views/settings.php:179
+msgid "Remote request timeout (seconds)"
+msgstr ""
+
+#: views/settings.php:183
+msgid "Consider a run stalled after (minutes)"
+msgstr ""
+
+#: views/settings.php:187
+msgid "Automatic resume attempts"
+msgstr ""
+
+#: views/settings.php:188
+msgid "After this many automatic resumes a stalled run is marked as interrupted."
+msgstr ""
+
+#: views/settings.php:194
+msgid "Retention and data"
+msgstr ""
+
+#: views/settings.php:197
+msgid "Keep logs for (days)"
+msgstr ""
+
+#: views/settings.php:201
+msgid "Keep run history for (days)"
+msgstr ""
+
+#: views/settings.php:202
+msgid "Runs older than this are deleted and can no longer be rolled back."
+msgstr ""
+
+#: views/settings.php:205
+msgid "Uninstall"
+msgstr ""
+
+#: views/settings.php:206
+msgid "Delete all plugin data (tables, settings, uploaded files) when the plugin is deleted"
+msgstr ""
+
+#: views/settings.php:211
+msgid "Save settings"
+msgstr ""
+
+#: views/settings.php:214
+msgid "Delete logs and runs older than the retention periods now?"
+msgstr ""
+
+#: views/settings.php:215
+msgid "Maintenance"
+msgstr ""
+
+#: views/settings.php:218
+msgid "Cleanup runs automatically once a day."
+msgstr ""
+
+#: views/settings.php:219
+msgid "Run cleanup now"
+msgstr ""
+
+#: views/source-form.php:22
+msgid "Edit data source"
+msgstr ""
+
+#: views/source-form.php:30
+msgid "General"
+msgstr ""
+
+#: views/source-form.php:33
+#: views/sources.php:38
+msgid "Name"
+msgstr ""
+
+#: views/source-form.php:34
+msgid "e.g. Main supplier price list"
+msgstr ""
+
+#: views/source-form.php:37
+msgid "Source type"
+msgstr ""
+
+#: views/source-form.php:45
+msgid "The type cannot be changed after creation. Create a new source instead."
+msgstr ""
+
+#: views/source-form.php:48
+msgid "Excel (XLSX) files require the PHP zip and xmlreader extensions, which are not available on this server."
+msgstr ""
+
+#: views/source-form.php:56
+msgid "Disabled sources cannot be synchronized manually or by schedule."
+msgstr ""
+
+#: views/source-form.php:63
+msgid "File"
+msgstr ""
+
+#: views/source-form.php:66
+msgid "Upload file"
+msgstr ""
+
+#. translators: %s: maximum size.
+#: views/source-form.php:72
+#, php-format
+msgid "CSV (.csv) or Excel (.xlsx). Maximum size: %s. The first row must contain column names."
+msgstr ""
+
+#. translators: %s: file name.
+#: views/source-form.php:79
+#, php-format
+msgid "Current file: %s (upload a new one to replace it)."
+msgstr ""
+
+#: views/source-form.php:89
+msgid "Remote address"
+msgstr ""
+
+#: views/source-form.php:92
+msgid "URL"
+msgstr ""
+
+#: views/source-form.php:96
+msgid "Only public http/https addresses are allowed. Private, local and reserved network addresses are blocked."
+msgstr ""
+
+#. translators: %s: masked URL.
+#: views/source-form.php:101
+#, php-format
+msgid "Saved address: %s — leave empty to keep it."
+msgstr ""
+
+#: views/source-form.php:108
+msgid "Authentication"
+msgstr ""
+
+#: views/source-form.php:113
+msgid "None"
+msgstr ""
+
+#: views/source-form.php:114
+msgid "Bearer token"
+msgstr ""
+
+#: views/source-form.php:115
+msgid "Username and password (Basic)"
+msgstr ""
+
+#: views/source-form.php:116
+msgid "Custom header (API key)"
+msgstr ""
+
+#: views/source-form.php:126
+msgid "Username"
+msgstr ""
+
+#: views/source-form.php:130
+msgid "Header name"
+msgstr ""
+
+#: views/source-form.php:134
+msgid "Token / password"
+msgstr ""
+
+#: views/source-form.php:141
+msgid "A credential is stored (encrypted). Leave empty to keep it."
+msgstr ""
+
+#: views/source-form.php:142
+msgid "Stored encrypted and never shown or logged."
+msgstr ""
+
+#: views/source-form.php:149
+msgid "Records path (JSON)"
+msgstr ""
+
+#: views/source-form.php:152
+msgid "Dot path to the list of products in the JSON response. Leave empty when the response itself is a list."
+msgstr ""
+
+#: views/source-form.php:159
+msgid "Format and values"
+msgstr ""
+
+#: views/source-form.php:162
+msgid "CSV delimiter"
+msgstr ""
+
+#: views/source-form.php:167
+#: views/source-form.php:184
+msgid "Detect automatically"
+msgstr ""
+
+#: views/source-form.php:168
+msgid "Comma (,)"
+msgstr ""
+
+#: views/source-form.php:169
+msgid "Semicolon (;)"
+msgstr ""
+
+#: views/source-form.php:170
+msgid "Tab"
+msgstr ""
+
+#: views/source-form.php:171
+msgid "Pipe (|)"
+msgstr ""
+
+#: views/source-form.php:181
+msgid "Text encoding"
+msgstr ""
+
+#: views/source-form.php:186
+msgid "Windows-1256 (Persian/Arabic Excel)"
+msgstr ""
+
+#: views/source-form.php:191
+msgid "Worksheet number"
+msgstr ""
+
+#: views/source-form.php:195
+msgid "Decimal separator"
+msgstr ""
+
+#: views/source-form.php:198
+msgid "Dot — 1,250,000.50"
+msgstr ""
+
+#: views/source-form.php:199
+msgid "Comma — 1.250.000,50"
+msgstr ""
+
+#: views/source-form.php:201
+msgid "Persian digits (۰–۹) and separators are converted automatically."
+msgstr ""
+
+#: views/source-form.php:205
+msgid "Price multiplier"
+msgstr ""
+
+#: views/source-form.php:208
+msgid "Applied to supplier prices before the profit margin, e.g. 0.1 to convert Rial to Toman, or an exchange rate."
+msgstr ""
+
+#: views/source-form.php:215
+msgid "Remove the sale price when the source sale price is empty"
+msgstr ""
+
+#: views/source-form.php:216
+msgid "Enable stock management on products that do not manage stock yet when a quantity is received"
+msgstr ""
+
+#: views/source-form.php:224
+msgid "Save changes"
+msgstr ""
+
+#: views/source-form.php:224
+msgid "Save and detect columns"
+msgstr ""
+
+#: views/sources.php:23
+msgid "No data sources yet"
+msgstr ""
+
+#: views/sources.php:24
+msgid "A data source is a CSV or Excel file you upload, or a CSV/JSON address of your supplier."
+msgstr ""
+
+#: views/sources.php:39
+msgid "Type"
+msgstr ""
+
+#: views/sources.php:40
+msgid "Location"
+msgstr ""
+
+#: views/sources.php:41
+#: views/sources.php:78
+msgid "Mapping"
+msgstr ""
+
+#: views/sources.php:43
+msgid "Last run"
+msgstr ""
+
+#: views/sources.php:44
+msgid "Actions"
+msgstr ""
+
+#: views/sources.php:63
+msgid "Configure"
+msgstr ""
+
+#: views/sources.php:73
+msgid "Never"
+msgstr ""
+
+#: views/sources.php:77
+msgid "Edit"
+msgstr ""
+
+#: views/sources.php:80
+msgid "Delete this data source? Its history is kept."
+msgstr ""
+
+#: views/sources.php:84
+msgid "Delete"
+msgstr ""
+
+#: views/sync.php:30
+msgid "Nothing to synchronize yet"
+msgstr ""
+
+#: views/sync.php:30
+msgid "Add a data source and map its columns first."
+msgstr ""
+
+#: views/sync.php:32
+msgid "No source is ready"
+msgstr ""
+
+#: views/sync.php:32
+msgid "Every source needs an enabled status and a complete field mapping (SKU plus at least one field)."
+msgstr ""
+
+#: views/sync.php:32
+msgid "Open field mapping"
+msgstr ""
+
+#: views/sync.php:35
+msgid "Start a synchronization"
+msgstr ""
+
+#: views/sync.php:36
+msgid "Recommended: run a preview first. It reads the source, matches SKUs and shows every change without saving anything. You can then confirm and apply exactly those changes."
+msgstr ""
+
+#: views/sync.php:47
+msgid "Apply changes to products directly, without a preview?"
+msgstr ""
+
+#: views/sync.php:47
+msgid "Synchronize now"
+msgstr ""
+
+#: views/sync.php:54
+msgid "Current run"
+msgstr ""
+
+#: views/sync.php:63
+msgid "This preview has already been applied."
+msgstr ""
+
+#: views/sync.php:64
+msgid "View the applied run"
+msgstr ""
+
+#: views/sync.php:67
+msgid "Apply the previewed changes to your products now?"
+msgstr ""
+
+#. translators: %s: number of products.
+#: views/sync.php:74
+#, php-format
+msgid "%s product will be updated. Review the changes below, then confirm."
+msgid_plural "%s products will be updated. Review the changes below, then confirm."
+msgstr[0] ""
+msgstr[1] ""
+
+#: views/sync.php:77
+msgid "Confirm and apply changes"
+msgstr ""
+
+#: views/sync.php:80
+msgid "The preview found nothing to change."
+msgstr ""

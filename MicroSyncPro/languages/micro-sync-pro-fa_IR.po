@@ -1,0 +1,2131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Micro Sync Pro 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Micro Studio\n"
+"Language-Team: Micro Studio\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-17T08:55:58+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: micro-sync-pro\n"
+
+#. Plugin Name of the plugin
+#: micro-sync-pro.php
+#: src/Admin/Admin.php:52
+#: src/Admin/Admin.php:71
+#: src/Dependencies.php:45
+#: views/dashboard.php:21
+msgid "Micro Sync Pro"
+msgstr "میکرو سینک پرو"
+
+#. Plugin URI of the plugin
+#: micro-sync-pro.php
+msgid "https://example.com/micro-sync-pro"
+msgstr "https://example.com/micro-sync-pro"
+
+#. Description of the plugin
+#: micro-sync-pro.php
+msgid "Professional WooCommerce product price and inventory synchronization from CSV, XLSX, and remote data sources."
+msgstr "همگام‌سازی حرفه‌ای قیمت و موجودی محصولات ووکامرس از فایل‌های CSV و XLSX و منابع داده راه دور."
+
+#. Author of the plugin
+#: micro-sync-pro.php
+msgid "Micro Studio"
+msgstr "میکرو استودیو"
+
+#. translators: %s: required PHP version.
+#: micro-sync-pro.php:37
+#, php-format
+msgid "Micro Sync Pro requires PHP %s or newer. The plugin is not running."
+msgstr "میکرو سینک پرو به PHP نسخه %s یا جدیدتر نیاز دارد. افزونه اجرا نمی‌شود."
+
+#: src/Admin/Actions.php:74
+#: src/Admin/Ajax.php:49
+msgid "You do not have permission to perform this action."
+msgstr "شما اجازه انجام این عملیات را ندارید."
+
+#: src/Admin/Actions.php:109
+#: src/Admin/Actions.php:237
+#: src/Admin/Actions.php:263
+#: src/Admin/Actions.php:280
+#: src/Admin/Pages.php:152
+#: src/Sync/RunManager.php:70
+msgid "The data source does not exist."
+msgstr "منبع داده وجود ندارد."
+
+#: src/Admin/Actions.php:117
+msgid "Enter a name for the data source."
+msgstr "یک نام برای منبع داده وارد کنید."
+
+#: src/Admin/Actions.php:121
+msgid "Select a valid source type."
+msgstr "یک نوع منبع معتبر انتخاب کنید."
+
+#: src/Admin/Actions.php:160
+msgid "Upload a file for this data source."
+msgstr "یک فایل برای این منبع داده بارگذاری کنید."
+
+#: src/Admin/Actions.php:189
+msgid "Data source saved and columns detected. Review the field mapping."
+msgstr "منبع داده ذخیره شد و ستون‌ها شناسایی شدند. نگاشت فیلدها را بررسی کنید."
+
+#: src/Admin/Actions.php:192
+msgid "Data source saved, but its columns could not be read yet."
+msgstr "منبع داده ذخیره شد، اما هنوز ستون‌های آن خوانده نشد."
+
+#: src/Admin/Actions.php:195
+msgid "Data source saved."
+msgstr "منبع داده ذخیره شد."
+
+#: src/Admin/Actions.php:211
+msgid "No columns were found in the source."
+msgstr "هیچ ستونی در منبع پیدا نشد."
+
+#: src/Admin/Actions.php:241
+msgid "This source has an active synchronization. Cancel it first."
+msgstr "این منبع یک همگام‌سازی فعال دارد. ابتدا آن را لغو کنید."
+
+#: src/Admin/Actions.php:252
+msgid "Data source deleted. Its history is kept."
+msgstr "منبع داده حذف شد. تاریخچه آن حفظ می‌شود."
+
+#. translators: %d: number of columns.
+#: src/Admin/Actions.php:268
+#, php-format
+msgid "%d columns detected."
+msgstr "%d ستون شناسایی شد."
+
+#: src/Admin/Actions.php:292
+msgid "Field mapping saved. You can now preview the synchronization."
+msgstr "نگاشت فیلدها ذخیره شد. اکنون می‌توانید پیش‌نمایش همگام‌سازی را اجرا کنید."
+
+#: src/Admin/Actions.php:307
+msgid "Synchronization started."
+msgstr "همگام‌سازی آغاز شد."
+
+#: src/Admin/Actions.php:307
+msgid "Preview started. No product will be changed."
+msgstr "پیش‌نمایش آغاز شد. هیچ محصولی تغییر نخواهد کرد."
+
+#: src/Admin/Actions.php:321
+msgid "Applying the previewed changes."
+msgstr "در حال اعمال تغییرات پیش‌نمایش‌شده."
+
+#: src/Admin/Actions.php:332
+msgid "Cancellation requested. The run stops after the current batch."
+msgstr "درخواست لغو ثبت شد. اجرا پس از دسته فعلی متوقف می‌شود."
+
+#: src/Admin/Actions.php:347
+msgid "The run was resumed from its last completed batch."
+msgstr "اجرا از آخرین دسته تکمیل‌شده ادامه یافت."
+
+#: src/Admin/Actions.php:362
+msgid "Rollback started."
+msgstr "بازگردانی آغاز شد."
+
+#. translators: %s: source name.
+#: src/Admin/Actions.php:381
+#, php-format
+msgid "\"%s\" needs a complete field mapping before it can be scheduled."
+msgstr "«%s» پیش از زمان‌بندی به نگاشت فیلد کامل نیاز دارد."
+
+#: src/Admin/Actions.php:392
+msgid "Schedules saved."
+msgstr "زمان‌بندی‌ها ذخیره شدند."
+
+#: src/Admin/Actions.php:422
+msgid "Settings saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: src/Admin/Actions.php:433
+#: src/Admin/Ajax.php:61
+#: src/Admin/Pages.php:295
+msgid "The run does not exist."
+msgstr "این اجرا وجود ندارد."
+
+#. translators: 1: logs, 2: runs, 3: files.
+#: src/Admin/Actions.php:474
+#, php-format
+msgid "Cleanup finished: %1$d log entries, %2$d runs and %3$d files removed."
+msgstr "پاک‌سازی انجام شد: %1$d رویداد گزارش، %2$d اجرا و %3$d فایل حذف شد."
+
+#: src/Admin/Admin.php:53
+msgid "Micro Sync"
+msgstr "میکرو سینک"
+
+#: src/Admin/Admin.php:93
+#: src/Admin/View.php:108
+msgid "Queued"
+msgstr "در صف"
+
+#: src/Admin/Admin.php:94
+#: src/Admin/View.php:109
+msgid "Running"
+msgstr "در حال اجرا"
+
+#: src/Admin/Admin.php:95
+msgid "Cancelling…"
+msgstr "در حال لغو…"
+
+#: src/Admin/Admin.php:96
+#: src/Admin/View.php:111
+msgid "Completed"
+msgstr "تکمیل‌شده"
+
+#: src/Admin/Admin.php:97
+#: src/Admin/View.php:112
+#: views/partial-progress.php:45
+#: views/partial-runs-table.php:37
+msgid "Failed"
+msgstr "ناموفق"
+
+#: src/Admin/Admin.php:98
+#: src/Admin/View.php:113
+msgid "Cancelled"
+msgstr "لغوشده"
+
+#: src/Admin/Admin.php:99
+#: src/Admin/View.php:114
+msgid "Interrupted"
+msgstr "قطع‌شده"
+
+#: src/Admin/Admin.php:100
+msgid "Reading and validating the source…"
+msgstr "در حال خواندن و اعتبارسنجی منبع…"
+
+#: src/Admin/Admin.php:101
+msgid "Processing records…"
+msgstr "در حال پردازش رکوردها…"
+
+#: src/Admin/Admin.php:102
+msgid "Finishing…"
+msgstr "در حال پایان…"
+
+#: src/Admin/Admin.php:103
+msgid "Connection problem. Retrying…"
+msgstr "مشکل در اتصال. تلاش دوباره…"
+
+#: src/Admin/Admin.php:104
+#: views/run-detail.php:74
+msgid "Stop this synchronization after the current batch?"
+msgstr "این همگام‌سازی پس از دسته فعلی متوقف شود؟"
+
+#: src/Admin/Admin.php:105
+msgid "Finished. Loading results…"
+msgstr "پایان یافت. در حال بارگذاری نتایج…"
+
+#: src/Admin/Admin.php:118
+#: src/Admin/View.php:51
+#: views/settings.php:15
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: src/Admin/Admin.php:119
+#: src/Admin/View.php:44
+msgid "Dashboard"
+msgstr "پیشخوان"
+
+#: src/Admin/Ajax.php:46
+msgid "Your session has expired. Reload the page."
+msgstr "نشست شما منقضی شده است. صفحه را دوباره بارگذاری کنید."
+
+#: src/Admin/Pages.php:40
+msgid "You do not have permission to access this page."
+msgstr "شما اجازه دسترسی به این صفحه را ندارید."
+
+#: src/Admin/Pages.php:111
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+#: src/Admin/Pages.php:116
+msgid "Background processing"
+msgstr "پردازش پس‌زمینه"
+
+#: src/Admin/Pages.php:117
+msgid "Action Scheduler"
+msgstr "Action Scheduler"
+
+#: src/Admin/Pages.php:117
+msgid "WP-Cron (fallback)"
+msgstr "WP-Cron (جایگزین)"
+
+#: src/Admin/Pages.php:121
+msgid "Order storage (HPOS)"
+msgstr "ذخیره‌سازی سفارش‌ها (HPOS)"
+
+#: src/Admin/Pages.php:122
+msgid "High-performance order storage — compatible"
+msgstr "ذخیره‌سازی سفارش با کارایی بالا — سازگار"
+
+#: src/Admin/Pages.php:122
+msgid "WordPress posts storage — compatible"
+msgstr "ذخیره‌سازی در نوشته‌های وردپرس — سازگار"
+
+#: src/Admin/Pages.php:126
+msgid "Excel (XLSX) support"
+msgstr "پشتیبانی از اکسل (XLSX)"
+
+#: src/Admin/Pages.php:127
+msgid "Available"
+msgstr "در دسترس"
+
+#: src/Admin/Pages.php:127
+msgid "Unavailable (PHP zip/xmlreader missing)"
+msgstr "در دسترس نیست (افزونه‌های zip/xmlreader در PHP وجود ندارد)"
+
+#: src/Admin/Pages.php:131
+msgid "Protected storage"
+msgstr "فضای ذخیره‌سازی محافظت‌شده"
+
+#: src/Admin/Pages.php:132
+msgid "Writable"
+msgstr "قابل نوشتن"
+
+#: src/Admin/Pages.php:132
+msgid "Not writable"
+msgstr "غیرقابل نوشتن"
+
+#: src/Admin/Pages.php:136
+msgid "WP-Cron"
+msgstr "WP-Cron"
+
+#: src/Admin/Pages.php:137
+msgid "Disabled (use a server cron job)"
+msgstr "غیرفعال (از کرون‌جاب سرور استفاده کنید)"
+
+#: src/Admin/Pages.php:137
+#: views/source-form.php:55
+msgid "Enabled"
+msgstr "فعال"
+
+#: src/Admin/View.php:45
+#: views/sources.php:19
+msgid "Data Sources"
+msgstr "منابع داده"
+
+#: src/Admin/View.php:46
+#: views/sync.php:20
+msgid "Synchronization"
+msgstr "همگام‌سازی"
+
+#: src/Admin/View.php:47
+#: views/mapping.php:20
+msgid "Field Mapping"
+msgstr "نگاشت فیلدها"
+
+#: src/Admin/View.php:48
+#: views/schedule.php:18
+#: views/sources.php:42
+msgid "Schedule"
+msgstr "زمان‌بندی"
+
+#: src/Admin/View.php:49
+#: views/history.php:20
+msgid "History"
+msgstr "تاریخچه"
+
+#: src/Admin/View.php:50
+#: views/logs.php:18
+msgid "Logs"
+msgstr "گزارش‌ها"
+
+#: src/Admin/View.php:79
+msgid "Micro Sync Pro sections"
+msgstr "بخش‌های میکرو سینک پرو"
+
+#: src/Admin/View.php:110
+msgid "Cancelling"
+msgstr "در حال لغو"
+
+#: src/Admin/View.php:115
+#: src/Admin/View.php:169
+#: views/partial-progress.php:42
+#: views/partial-runs-table.php:32
+msgid "Updated"
+msgstr "به‌روزرسانی‌شده"
+
+#: src/Admin/View.php:116
+#: views/partial-progress.php:42
+msgid "Will update"
+msgstr "به‌روزرسانی خواهد شد"
+
+#: src/Admin/View.php:117
+#: views/partial-progress.php:43
+#: views/partial-runs-table.php:34
+#: views/run-detail.php:41
+msgid "Unchanged"
+msgstr "بدون تغییر"
+
+#: src/Admin/View.php:118
+#: views/partial-progress.php:44
+#: views/partial-runs-table.php:36
+msgid "Skipped"
+msgstr "ردشده"
+
+#: src/Admin/View.php:119
+#: src/Admin/View.php:182
+#: views/partial-progress.php:42
+msgid "Reverted"
+msgstr "بازگردانده‌شده"
+
+#: src/Admin/View.php:141
+#: views/sync.php:46
+msgid "Preview (dry run)"
+msgstr "پیش‌نمایش (اجرای آزمایشی)"
+
+#: src/Admin/View.php:142
+msgid "Apply"
+msgstr "اعمال"
+
+#: src/Admin/View.php:143
+msgid "Rollback"
+msgstr "بازگردانی"
+
+#: src/Admin/View.php:155
+msgid "Manual"
+msgstr "دستی"
+
+#: src/Admin/View.php:156
+msgid "Scheduled"
+msgstr "زمان‌بندی‌شده"
+
+#: src/Admin/View.php:157
+msgid "CLI"
+msgstr "خط فرمان"
+
+#: src/Admin/View.php:170
+msgid "Change detected"
+msgstr "تغییر شناسایی شد"
+
+#: src/Admin/View.php:171
+msgid "Already up to date"
+msgstr "از قبل به‌روز است"
+
+#: src/Admin/View.php:172
+msgid "Nothing applicable to change"
+msgstr "چیز قابل‌تغییری وجود ندارد"
+
+#: src/Admin/View.php:173
+msgid "Empty SKU"
+msgstr "SKU خالی"
+
+#: src/Admin/View.php:174
+msgid "Duplicate SKU in source"
+msgstr "SKU تکراری در منبع"
+
+#: src/Admin/View.php:175
+msgid "No matching product"
+msgstr "محصول منطبقی وجود ندارد"
+
+#: src/Admin/View.php:176
+msgid "Ambiguous match"
+msgstr "تطبیق مبهم"
+
+#: src/Admin/View.php:177
+msgid "Unsupported product type"
+msgstr "نوع محصول پشتیبانی نمی‌شود"
+
+#: src/Admin/View.php:178
+msgid "Invalid value"
+msgstr "مقدار نامعتبر"
+
+#: src/Admin/View.php:179
+msgid "Save error"
+msgstr "خطای ذخیره"
+
+#: src/Admin/View.php:180
+msgid "Product load error"
+msgstr "خطای بارگذاری محصول"
+
+#: src/Admin/View.php:181
+msgid "Unexpected error"
+msgstr "خطای غیرمنتظره"
+
+#: src/Admin/View.php:183
+msgid "Changed since sync"
+msgstr "پس از همگام‌سازی تغییر کرده"
+
+#: src/Admin/View.php:184
+msgid "Product deleted"
+msgstr "محصول حذف شده"
+
+#: src/Admin/View.php:185
+msgid "Nothing to revert"
+msgstr "چیزی برای بازگردانی نیست"
+
+#: src/Admin/View.php:196
+#: src/Mapping/FieldMapper.php:33
+msgid "Regular price"
+msgstr "قیمت عادی"
+
+#: src/Admin/View.php:197
+#: src/Mapping/FieldMapper.php:34
+msgid "Sale price"
+msgstr "قیمت ویژه"
+
+#: src/Admin/View.php:198
+#: src/Mapping/FieldMapper.php:35
+msgid "Stock quantity"
+msgstr "تعداد موجودی"
+
+#: src/Admin/View.php:199
+#: src/Mapping/FieldMapper.php:36
+msgid "Stock status"
+msgstr "وضعیت موجودی"
+
+#: src/Admin/View.php:200
+msgid "Manage stock"
+msgstr "مدیریت موجودی"
+
+#: src/Admin/View.php:216
+msgid "Yes"
+msgstr "بله"
+
+#: src/Admin/View.php:216
+msgid "No"
+msgstr "خیر"
+
+#. translators: %s: number of items.
+#: src/Admin/View.php:307
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s مورد"
+
+#. translators: 1: required WooCommerce version, 2: installed version.
+#: src/Dependencies.php:38
+#, php-format
+msgid "Micro Sync Pro requires WooCommerce %1$s or newer (installed: %2$s). Synchronization is disabled until WooCommerce is updated."
+msgstr "میکرو سینک پرو به ووکامرس نسخه %1$s یا جدیدتر نیاز دارد (نسخه نصب‌شده: %2$s). همگام‌سازی تا به‌روزرسانی ووکامرس غیرفعال است."
+
+#: src/Dependencies.php:43
+msgid "Micro Sync Pro requires WooCommerce to be installed and active. Synchronization is disabled until WooCommerce is activated."
+msgstr "میکرو سینک پرو به نصب و فعال بودن ووکامرس نیاز دارد. همگام‌سازی تا فعال‌سازی ووکامرس غیرفعال است."
+
+#: src/Mapping/FieldMapper.php:32
+msgid "SKU (matching key)"
+msgstr "SKU (کلید تطبیق)"
+
+#: src/Mapping/FieldMapper.php:94
+msgid "The field mapping is invalid."
+msgstr "نگاشت فیلدها نامعتبر است."
+
+#. translators: %s: column name.
+#: src/Mapping/FieldMapper.php:108
+#, php-format
+msgid "The column \"%s\" does not exist in the source."
+msgstr "ستون «%s» در منبع وجود ندارد."
+
+#: src/Mapping/FieldMapper.php:115
+msgid "A source column must be mapped to SKU."
+msgstr "باید یک ستون منبع به SKU نگاشت شود."
+
+#: src/Mapping/FieldMapper.php:132
+msgid "Select at least one field to synchronize besides SKU."
+msgstr "دست‌کم یک فیلد به‌جز SKU برای همگام‌سازی انتخاب کنید."
+
+#: src/Parser/CsvParser.php:48
+#: src/Parser/JsonParser.php:43
+#: src/Parser/JsonParser.php:47
+#: src/Parser/XlsxParser.php:53
+msgid "The source file cannot be read."
+msgstr "فایل منبع قابل خواندن نیست."
+
+#: src/Parser/CsvParser.php:52
+msgid "The source file cannot be opened."
+msgstr "فایل منبع باز نمی‌شود."
+
+#: src/Parser/CsvParser.php:118
+msgid "The CSV file has no header row."
+msgstr "فایل CSV ردیف سرستون ندارد."
+
+#. translators: %s: JSON error message.
+#: src/Parser/JsonParser.php:80
+#, php-format
+msgid "Invalid JSON: %s"
+msgstr "JSON نامعتبر: %s"
+
+#: src/Parser/JsonParser.php:88
+msgid "The records path is not valid."
+msgstr "مسیر رکوردها معتبر نیست."
+
+#: src/Parser/JsonParser.php:92
+msgid "The records path was not found in the JSON document."
+msgstr "مسیر رکوردها در سند JSON پیدا نشد."
+
+#: src/Parser/JsonParser.php:98
+msgid "The JSON records must be an array of objects."
+msgstr "رکوردهای JSON باید آرایه‌ای از اشیا باشند."
+
+#: src/Parser/JsonParser.php:107
+msgid "The JSON records must be an array of objects. Set the records path (for example \"data.items\")."
+msgstr "رکوردهای JSON باید آرایه‌ای از اشیا باشند. مسیر رکوردها را تنظیم کنید (برای نمونه «data.items»)."
+
+#: src/Parser/ParserFactory.php:32
+msgid "Unsupported file format."
+msgstr "قالب فایل پشتیبانی نمی‌شود."
+
+#: src/Parser/XlsxParser.php:50
+msgid "XLSX support requires the PHP zip and xmlreader extensions."
+msgstr "پشتیبانی از XLSX به افزونه‌های zip و xmlreader در PHP نیاز دارد."
+
+#: src/Parser/XlsxParser.php:57
+#: src/Security/UploadHandler.php:126
+msgid "The file is not a valid XLSX workbook."
+msgstr "فایل یک کارپوشه XLSX معتبر نیست."
+
+#: src/Parser/XlsxParser.php:65
+msgid "The selected worksheet does not exist."
+msgstr "کاربرگ انتخاب‌شده وجود ندارد."
+
+#: src/Parser/XlsxParser.php:71
+msgid "The worksheet cannot be read."
+msgstr "کاربرگ قابل خواندن نیست."
+
+#: src/Parser/XlsxParser.php:116
+msgid "The worksheet has no header row."
+msgstr "کاربرگ ردیف سرستون ندارد."
+
+#: src/Parser/XlsxParser.php:288
+msgid "The workbook contains too many distinct text values."
+msgstr "کارپوشه تعداد بسیار زیادی مقدار متنی متمایز دارد."
+
+#. translators: 1: price, 2: min, 3: max.
+#: src/Pricing/PricingEngine.php:100
+#, php-format
+msgid "Calculated price %1$s is outside the allowed range (%2$s – %3$s); field skipped."
+msgstr "قیمت محاسبه‌شده %1$s خارج از بازه مجاز (%2$s – %3$s) است؛ این فیلد رد شد."
+
+#. translators: 1: calculated price, 2: limited price.
+#: src/Pricing/PricingEngine.php:110
+#, php-format
+msgid "Calculated price %1$s was limited to %2$s."
+msgstr "قیمت محاسبه‌شده %1$s به %2$s محدود شد."
+
+#: src/Repository/SourceRepository.php:109
+#: src/Repository/SourceRepository.php:116
+msgid "The source could not be saved."
+msgstr "منبع ذخیره نشد."
+
+#: src/Repository/SourceRepository.php:164
+msgid "The records path may contain only letters, digits, \"_\", \"-\" and dots."
+msgstr "مسیر رکوردها فقط می‌تواند شامل حروف، اعداد، «_»، «-» و نقطه باشد."
+
+#: src/Repository/SourceRepository.php:174
+msgid "The price multiplier must be a positive number."
+msgstr "ضریب قیمت باید عددی مثبت باشد."
+
+#: src/Repository/SourceRepository.php:188
+msgid "A remote URL is required for this source type."
+msgstr "برای این نوع منبع، نشانی راه دور الزامی است."
+
+#: src/Repository/SourceRepository.php:195
+#: src/Security/UrlValidator.php:107
+msgid "The URL is not valid."
+msgstr "نشانی معتبر نیست."
+
+#: src/Repository/SourceRepository.php:207
+msgid "The custom header name is not valid."
+msgstr "نام سرآیند سفارشی معتبر نیست."
+
+#: src/Repository/SourceRepository.php:219
+msgid "The credential contains invalid characters."
+msgstr "اطلاعات احراز هویت شامل نویسه‌های نامعتبر است."
+
+#: src/Repository/SourceRepository.php:226
+msgid "Enter the credential for the selected authentication method."
+msgstr "اطلاعات احراز هویت را برای روش انتخاب‌شده وارد کنید."
+
+#: src/Scheduling/JobQueue.php:153
+#: src/Sync/SyncEngine.php:104
+msgid "Cancelled by user."
+msgstr "توسط کاربر لغو شد."
+
+#: src/Scheduling/JobQueue.php:162
+msgid "The run stopped responding and was marked as interrupted. It can be resumed from the History page."
+msgstr "اجرا پاسخ نداد و به‌عنوان قطع‌شده علامت خورد. می‌توانید آن را از صفحه تاریخچه ادامه دهید."
+
+#: src/Scheduling/Scheduler.php:60
+#: views/sources.php:54
+msgid "Disabled"
+msgstr "غیرفعال"
+
+#: src/Scheduling/Scheduler.php:61
+msgid "Every hour"
+msgstr "هر ساعت"
+
+#: src/Scheduling/Scheduler.php:62
+msgid "Twice a day"
+msgstr "دو بار در روز"
+
+#: src/Scheduling/Scheduler.php:63
+msgid "Once a day"
+msgstr "روزی یک بار"
+
+#: src/Scheduling/Scheduler.php:64
+msgid "Once a week"
+msgstr "هفته‌ای یک بار"
+
+#: src/Scheduling/Scheduler.php:90
+msgid "Every 10 minutes (Micro Sync Pro)"
+msgstr "هر ۱۰ دقیقه (میکرو سینک پرو)"
+
+#: src/Security/UploadHandler.php:56
+msgid "No file was uploaded."
+msgstr "هیچ فایلی بارگذاری نشد."
+
+#: src/Security/UploadHandler.php:59
+#: src/Security/UploadHandler.php:74
+msgid "The uploaded file exceeds the maximum allowed size."
+msgstr "حجم فایل بارگذاری‌شده از حداکثر مجاز بیشتر است."
+
+#: src/Security/UploadHandler.php:62
+msgid "The file upload failed. Please try again."
+msgstr "بارگذاری فایل ناموفق بود. دوباره تلاش کنید."
+
+#: src/Security/UploadHandler.php:67
+msgid "Invalid upload."
+msgstr "بارگذاری نامعتبر."
+
+#: src/Security/UploadHandler.php:71
+msgid "The uploaded file is empty."
+msgstr "فایل بارگذاری‌شده خالی است."
+
+#: src/Security/UploadHandler.php:83
+#: src/Sources/RemoteFetcher.php:72
+msgid "The storage directory could not be created."
+msgstr "پوشه ذخیره‌سازی ایجاد نشد."
+
+#: src/Security/UploadHandler.php:88
+msgid "The uploaded file could not be saved."
+msgstr "فایل بارگذاری‌شده ذخیره نشد."
+
+#: src/Security/UploadHandler.php:110
+msgid "Only .csv files are allowed for this source."
+msgstr "برای این منبع فقط فایل‌های ‎.csv مجاز است."
+
+#: src/Security/UploadHandler.php:118
+#: src/Security/UploadHandler.php:128
+msgid "The file type is not allowed."
+msgstr "نوع فایل مجاز نیست."
+
+#: src/Security/UploadHandler.php:120
+msgid "The file does not look like a CSV text file."
+msgstr "فایل شبیه یک فایل متنی CSV نیست."
+
+#: src/Security/UploadHandler.php:124
+msgid "Only .xlsx files are allowed for this source."
+msgstr "برای این منبع فقط فایل‌های ‎.xlsx مجاز است."
+
+#: src/Security/UrlValidator.php:97
+msgid "The URL is empty."
+msgstr "نشانی خالی است."
+
+#: src/Security/UrlValidator.php:100
+msgid "The URL is too long."
+msgstr "نشانی بیش از حد طولانی است."
+
+#: src/Security/UrlValidator.php:103
+msgid "The URL contains invalid characters."
+msgstr "نشانی شامل نویسه‌های نامعتبر است."
+
+#: src/Security/UrlValidator.php:111
+msgid "Only http and https URLs are allowed."
+msgstr "فقط نشانی‌های http و https مجاز هستند."
+
+#: src/Security/UrlValidator.php:114
+msgid "Credentials inside the URL are not allowed. Use the authentication fields instead."
+msgstr "قرار دادن اطلاعات ورود در نشانی مجاز نیست. از فیلدهای احراز هویت استفاده کنید."
+
+#: src/Security/UrlValidator.php:118
+msgid "The URL port is not allowed."
+msgstr "درگاه (پورت) نشانی مجاز نیست."
+
+#: src/Security/UrlValidator.php:127
+#: src/Security/UrlValidator.php:149
+msgid "The URL host name could not be resolved."
+msgstr "نام میزبان نشانی قابل تبدیل به IP نیست."
+
+#: src/Security/UrlValidator.php:134
+#: src/Security/UrlValidator.php:144
+#: src/Security/UrlValidator.php:153
+msgid "Requests to private, loopback or reserved addresses are not allowed."
+msgstr "درخواست به نشانی‌های خصوصی، محلی یا رزروشده مجاز نیست."
+
+#: src/Security/UrlValidator.php:141
+msgid "The URL host name is not valid."
+msgstr "نام میزبان نشانی معتبر نیست."
+
+#: src/Sources/RemoteFetcher.php:69
+msgid "Unsupported remote format."
+msgstr "قالب راه دور پشتیبانی نمی‌شود."
+
+#. translators: %s: error message.
+#: src/Sources/RemoteFetcher.php:123
+#, php-format
+msgid "The remote source could not be downloaded: %s"
+msgstr "منبع راه دور دریافت نشد: %s"
+
+#. translators: %d: HTTP status code.
+#: src/Sources/RemoteFetcher.php:143
+#, php-format
+msgid "The remote server responded with HTTP status %d."
+msgstr "سرور راه دور با کد وضعیت HTTP ‏%d پاسخ داد."
+
+#: src/Sources/RemoteFetcher.php:156
+msgid "The remote source redirected too many times."
+msgstr "منبع راه دور بیش از حد تغییر مسیر داد."
+
+#: src/Sources/RemoteFetcher.php:170
+#: src/Sources/RemoteFetcher.php:175
+msgid "The remote source returned an empty response."
+msgstr "منبع راه دور پاسخ خالی برگرداند."
+
+#: src/Sources/RemoteFetcher.php:178
+msgid "The remote response exceeds the maximum allowed size."
+msgstr "حجم پاسخ راه دور از حداکثر مجاز بیشتر است."
+
+#. translators: %s: content type.
+#: src/Sources/RemoteFetcher.php:186
+#, php-format
+msgid "Unexpected content type from the remote source: %s"
+msgstr "نوع محتوای غیرمنتظره از منبع راه دور: %s"
+
+#: src/Sources/RemoteFetcher.php:192
+msgid "The remote response is not a valid text document."
+msgstr "پاسخ راه دور یک سند متنی معتبر نیست."
+
+#: src/Sources/RemoteFetcher.php:198
+msgid "The remote response is not JSON."
+msgstr "پاسخ راه دور JSON نیست."
+
+#: src/Sources/RemoteFetcher.php:201
+msgid "The remote response is an HTML/XML page, not CSV."
+msgstr "پاسخ راه دور یک صفحه HTML/XML است، نه CSV."
+
+#: src/Sources/SourceStager.php:64
+msgid "The remote URL could not be read. Edit the source and enter the URL again."
+msgstr "نشانی راه دور خوانده نشد. منبع را ویرایش کرده و نشانی را دوباره وارد کنید."
+
+#: src/Sources/SourceStager.php:77
+msgid "No file has been uploaded for this source."
+msgstr "هنوز فایلی برای این منبع بارگذاری نشده است."
+
+#: src/Sources/SourceStager.php:128
+msgid "The field mapping for this source is incomplete. Map SKU and at least one field."
+msgstr "نگاشت فیلدهای این منبع ناقص است. SKU و دست‌کم یک فیلد را نگاشت کنید."
+
+#. translators: %s: list of column names.
+#: src/Sources/SourceStager.php:146
+#, php-format
+msgid "Mapped columns are missing from the source: %s"
+msgstr "ستون‌های نگاشت‌شده در منبع وجود ندارند: %s"
+
+#: src/Sources/SourceStager.php:153
+msgid "The staging file could not be created."
+msgstr "فایل مرحله‌بندی ایجاد نشد."
+
+#: src/Sources/SourceStager.php:214
+#: src/Sources/SourceStager.php:218
+msgid "The staged data for this run is no longer available."
+msgstr "داده‌های مرحله‌بندی این اجرا دیگر در دسترس نیست."
+
+#: src/Sources/SourceTypes.php:29
+msgid "CSV file upload"
+msgstr "بارگذاری فایل CSV"
+
+#: src/Sources/SourceTypes.php:30
+msgid "Remote CSV URL"
+msgstr "نشانی CSV راه دور"
+
+#: src/Sources/SourceTypes.php:31
+msgid "Remote JSON URL / supplier API"
+msgstr "نشانی JSON راه دور / API تأمین‌کننده"
+
+#: src/Sources/SourceTypes.php:34
+msgid "Excel (XLSX) file upload"
+msgstr "بارگذاری فایل اکسل (XLSX)"
+
+#. translators: %s: product type.
+#: src/Sync/ProductUpdater.php:82
+#, php-format
+msgid "Product type \"%s\" is not supported."
+msgstr "نوع محصول «%s» پشتیبانی نمی‌شود."
+
+#: src/Sync/ProductUpdater.php:133
+msgid "Prices of variable products are stored on their variations; price fields were ignored."
+msgstr "قیمت محصولات متغیر روی متغیرهای آن‌ها ذخیره می‌شود؛ فیلدهای قیمت نادیده گرفته شدند."
+
+#: src/Sync/ProductUpdater.php:169
+msgid "Sale price is not lower than the regular price; sale price was ignored."
+msgstr "قیمت ویژه کمتر از قیمت عادی نیست؛ قیمت ویژه نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:184
+msgid "External products do not have stock; quantity was ignored."
+msgstr "محصولات خارجی موجودی ندارند؛ تعداد نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:186
+msgid "Stock management is disabled in WooCommerce settings; quantity was ignored."
+msgstr "مدیریت موجودی در تنظیمات ووکامرس غیرفعال است؛ تعداد نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:189
+msgid "Stock of this variation is managed by the parent product; quantity was ignored."
+msgstr "موجودی این متغیر توسط محصول مادر مدیریت می‌شود؛ تعداد نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:191
+msgid "Stock management is not enabled for this product; quantity was ignored."
+msgstr "مدیریت موجودی برای این محصول فعال نیست؛ تعداد نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:202
+msgid "External products are always in stock; stock status was ignored."
+msgstr "محصولات خارجی همیشه موجود هستند؛ وضعیت موجودی نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:204
+msgid "The stock status of variable products is derived from their variations; it was ignored."
+msgstr "وضعیت موجودی محصولات متغیر از متغیرهای آن‌ها به دست می‌آید؛ نادیده گرفته شد."
+
+#: src/Sync/ProductUpdater.php:206
+msgid "Stock status is calculated by WooCommerce from the managed quantity; it was ignored."
+msgstr "وضعیت موجودی را ووکامرس از تعداد مدیریت‌شده محاسبه می‌کند؛ نادیده گرفته شد."
+
+#. translators: %s: error message.
+#: src/Sync/ProductUpdater.php:268
+#, php-format
+msgid "WooCommerce rejected the update: %s"
+msgstr "ووکامرس به‌روزرسانی را نپذیرفت: %s"
+
+#: src/Sync/RollbackService.php:51
+msgid "No stored changes to revert."
+msgstr "تغییر ذخیره‌شده‌ای برای بازگردانی وجود ندارد."
+
+#: src/Sync/RollbackService.php:59
+msgid "The product no longer exists."
+msgstr "محصول دیگر وجود ندارد."
+
+#. translators: %s: field names.
+#: src/Sync/RollbackService.php:80
+#, php-format
+msgid "The product was modified after synchronization (%s); it was not reverted."
+msgstr "محصول پس از همگام‌سازی تغییر کرده است (%s)؛ بازگردانده نشد."
+
+#: src/Sync/RunManager.php:66
+msgid "Invalid run mode."
+msgstr "حالت اجرا نامعتبر است."
+
+#: src/Sync/RunManager.php:73
+msgid "The data source is disabled."
+msgstr "منبع داده غیرفعال است."
+
+#: src/Sync/RunManager.php:76
+msgid "Configure the field mapping for this source first."
+msgstr "ابتدا نگاشت فیلدهای این منبع را پیکربندی کنید."
+
+#: src/Sync/RunManager.php:105
+msgid "Only a completed preview can be applied."
+msgstr "فقط پیش‌نمایش تکمیل‌شده قابل اعمال است."
+
+#: src/Sync/RunManager.php:108
+msgid "This preview has already been applied. Run a new preview."
+msgstr "این پیش‌نمایش قبلاً اعمال شده است. یک پیش‌نمایش جدید اجرا کنید."
+
+#: src/Sync/RunManager.php:111
+msgid "The preview data has expired. Run a new preview."
+msgstr "داده‌های پیش‌نمایش منقضی شده است. یک پیش‌نمایش جدید اجرا کنید."
+
+#: src/Sync/RunManager.php:115
+msgid "The data source does not exist or is disabled."
+msgstr "منبع داده وجود ندارد یا غیرفعال است."
+
+#: src/Sync/RunManager.php:119
+msgid "The preview data could not be copied."
+msgstr "داده‌های پیش‌نمایش کپی نشد."
+
+#: src/Sync/RunManager.php:161
+msgid "This run cannot be rolled back."
+msgstr "این اجرا قابل بازگردانی نیست."
+
+#. translators: %d: run id.
+#: src/Sync/RunManager.php:192
+#, php-format
+msgid "Another synchronization (#%d) is already running for this source."
+msgstr "همگام‌سازی دیگری (#%d) برای این منبع در حال اجراست."
+
+#: src/Sync/RunManager.php:199
+msgid "The run could not be created."
+msgstr "اجرا ایجاد نشد."
+
+#: src/Sync/RunManager.php:209
+msgid "Cancelled: another run for this source started at the same time."
+msgstr "لغو شد: اجرای دیگری برای این منبع هم‌زمان آغاز شد."
+
+#: src/Sync/RunManager.php:216
+#: src/Sync/RunManager.php:262
+msgid "Another synchronization is already running for this source."
+msgstr "همگام‌سازی دیگری برای این منبع در حال اجراست."
+
+#: src/Sync/RunManager.php:232
+msgid "This run is not active."
+msgstr "این اجرا فعال نیست."
+
+#: src/Sync/RunManager.php:236
+msgid "Cancelled by user before it started."
+msgstr "پیش از آغاز توسط کاربر لغو شد."
+
+#: src/Sync/RunManager.php:255
+#: src/Sync/RunManager.php:265
+msgid "Only interrupted runs can be resumed."
+msgstr "فقط اجراهای قطع‌شده قابل ادامه هستند."
+
+#: src/Sync/RunManager.php:258
+msgid "The staged data of this run is no longer available; it cannot be resumed."
+msgstr "داده‌های مرحله‌بندی این اجرا دیگر در دسترس نیست؛ امکان ادامه آن وجود ندارد."
+
+#. translators: %s: error message.
+#: src/Sync/SyncEngine.php:133
+#, php-format
+msgid "Unexpected error: %s"
+msgstr "خطای غیرمنتظره: %s"
+
+#: src/Sync/SyncEngine.php:167
+msgid "The data source no longer exists."
+msgstr "منبع داده دیگر وجود ندارد."
+
+#: src/Sync/SyncEngine.php:280
+msgid "The record has no SKU."
+msgstr "این رکورد SKU ندارد."
+
+#. translators: %d: occurrences.
+#: src/Sync/SyncEngine.php:288
+#, php-format
+msgid "This SKU appears %d times in the source; all occurrences were skipped to avoid an ambiguous update."
+msgstr "این SKU ‏%d بار در منبع آمده است؛ برای جلوگیری از به‌روزرسانی مبهم، همه موارد رد شدند."
+
+#: src/Sync/SyncEngine.php:296
+msgid "No product or variation with this SKU exists. New products are never created."
+msgstr "هیچ محصول یا متغیری با این SKU وجود ندارد. محصول جدید هرگز ساخته نمی‌شود."
+
+#. translators: %s: product IDs.
+#: src/Sync/SyncEngine.php:304
+#, php-format
+msgid "Several products share this SKU (IDs: %s); none was updated."
+msgstr "چند محصول این SKU را دارند (شناسه‌ها: %s)؛ هیچ‌کدام به‌روزرسانی نشد."
+
+#: src/Sync/SyncEngine.php:313
+msgid "The matched product could not be loaded."
+msgstr "محصول منطبق بارگذاری نشد."
+
+#. translators: 1: processed, 2: updated, 3: unchanged, 4: skipped, 5: failed.
+#: src/Sync/SyncEngine.php:373
+#, php-format
+msgid "Processed %1$d records: %2$d updated, %3$d unchanged, %4$d skipped, %5$d failed."
+msgstr "%1$d رکورد پردازش شد: %2$d به‌روزرسانی، %3$d بدون تغییر، %4$d ردشده، %5$d ناموفق."
+
+#. translators: 1: processed, 2: would update, 3: unchanged, 4: skipped, 5: failed.
+#: src/Sync/SyncEngine.php:383
+#, php-format
+msgid "Preview of %1$d records: %2$d would be updated, %3$d unchanged, %4$d skipped, %5$d failed."
+msgstr "پیش‌نمایش %1$d رکورد: %2$d به‌روزرسانی خواهد شد، %3$d بدون تغییر، %4$d ردشده، %5$d ناموفق."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:98
+#, php-format
+msgid "Invalid price value \"%s\"."
+msgstr "مقدار قیمت نامعتبر «%s»."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:106
+#, php-format
+msgid "Price cannot be negative (\"%s\")."
+msgstr "قیمت نمی‌تواند منفی باشد («%s»)."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:113
+#, php-format
+msgid "Price is unrealistically large (\"%s\")."
+msgstr "قیمت به‌طور غیرواقعی بزرگ است («%s»)."
+
+#: src/Validation/RecordValidator.php:119
+msgid "Price is zero. Zero prices are rejected (see Settings)."
+msgstr "قیمت صفر است. قیمت‌های صفر پذیرفته نمی‌شوند (تنظیمات را ببینید)."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:140
+#, php-format
+msgid "Invalid stock quantity \"%s\" (a whole number is required)."
+msgstr "تعداد موجودی نامعتبر «%s» (عدد صحیح لازم است)."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:148
+#, php-format
+msgid "Stock quantity is out of range (\"%s\")."
+msgstr "تعداد موجودی خارج از بازه است («%s»)."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:155
+#, php-format
+msgid "Negative stock quantity \"%s\" is not allowed (see Settings)."
+msgstr "موجودی منفی «%s» مجاز نیست (تنظیمات را ببینید)."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:199
+#, php-format
+msgid "Unsupported stock status \"%s\"."
+msgstr "وضعیت موجودی پشتیبانی‌نشده «%s»."
+
+#. translators: %s: raw value.
+#: src/Validation/RecordValidator.php:210
+#, php-format
+msgid "Unknown stock status \"%s\". Use instock, outofstock or onbackorder."
+msgstr "وضعیت موجودی ناشناخته «%s». از instock، outofstock یا onbackorder استفاده کنید."
+
+#: views/dashboard.php:25
+msgid "Welcome to Micro Sync Pro"
+msgstr "به میکرو سینک پرو خوش آمدید"
+
+#: views/dashboard.php:26
+msgid "Add your first data source (CSV, Excel or a supplier URL), map its columns and run a preview. Products are matched by SKU and are never created automatically."
+msgstr "نخستین منبع داده خود را (CSV، اکسل یا نشانی تأمین‌کننده) اضافه کنید، ستون‌های آن را نگاشت کنید و پیش‌نمایش بگیرید. محصولات بر اساس SKU تطبیق داده می‌شوند و هرگز به‌طور خودکار ساخته نمی‌شوند."
+
+#: views/dashboard.php:28
+msgid "Add a data source"
+msgstr "افزودن منبع داده"
+
+#: views/dashboard.php:34
+msgid "Data sources"
+msgstr "منابع داده"
+
+#. translators: %s: number of scheduled sources.
+#: views/dashboard.php:39
+#, php-format
+msgid "%s scheduled"
+msgstr "%s زمان‌بندی‌شده"
+
+#: views/dashboard.php:44
+msgid "Runs (30 days)"
+msgstr "اجراها (۳۰ روز)"
+
+#. translators: %s: number of failed runs.
+#: views/dashboard.php:49
+#, php-format
+msgid "%s failed or interrupted"
+msgstr "%s ناموفق یا قطع‌شده"
+
+#: views/dashboard.php:54
+msgid "Products updated (30 days)"
+msgstr "محصولات به‌روزشده (۳۰ روز)"
+
+#: views/dashboard.php:58
+msgid "Failed records (30 days)"
+msgstr "رکوردهای ناموفق (۳۰ روز)"
+
+#: views/dashboard.php:65
+#: views/sync.php:87
+msgid "Running now"
+msgstr "در حال اجرا"
+
+#: views/dashboard.php:74
+msgid "Recent runs"
+msgstr "اجراهای اخیر"
+
+#: views/dashboard.php:76
+msgid "No synchronization has been run yet."
+msgstr "هنوز هیچ همگام‌سازی اجرا نشده است."
+
+#: views/dashboard.php:79
+msgid "View full history"
+msgstr "مشاهده کل تاریخچه"
+
+#: views/dashboard.php:83
+msgid "Latest product changes"
+msgstr "آخرین تغییرات محصولات"
+
+#: views/dashboard.php:85
+msgid "No product has been changed yet."
+msgstr "هنوز هیچ محصولی تغییر نکرده است."
+
+#: views/dashboard.php:89
+#: views/partial-items.php:77
+msgid "SKU"
+msgstr "SKU"
+
+#: views/dashboard.php:90
+#: views/partial-items.php:80
+msgid "Changes"
+msgstr "تغییرات"
+
+#: views/dashboard.php:91
+#: views/logs.php:54
+msgid "Date"
+msgstr "تاریخ"
+
+#: views/dashboard.php:114
+msgid "System status"
+msgstr "وضعیت سیستم"
+
+#: views/history.php:25
+#: views/partial-runs-table.php:23
+#: views/run-detail.php:33
+msgid "Source"
+msgstr "منبع"
+
+#: views/history.php:27
+#: views/history.php:34
+#: views/history.php:41
+#: views/logs.php:36
+#: views/partial-items.php:44
+#: views/partial-items.php:51
+msgid "All"
+msgstr "همه"
+
+#: views/history.php:32
+#: views/partial-runs-table.php:24
+#: views/run-detail.php:34
+msgid "Mode"
+msgstr "حالت"
+
+#: views/history.php:39
+#: views/partial-items.php:42
+#: views/partial-runs-table.php:25
+#: views/run-detail.php:35
+#: views/schedule.php:47
+#: views/source-form.php:53
+msgid "Status"
+msgstr "وضعیت"
+
+#: views/history.php:46
+#: views/logs.php:45
+#: views/partial-items.php:58
+msgid "Filter"
+msgstr "فیلتر"
+
+#: views/history.php:50
+msgid "No runs found"
+msgstr "هیچ اجرایی پیدا نشد"
+
+#: views/history.php:50
+msgid "Every preview, synchronization and rollback is recorded here with its per-record results."
+msgstr "هر پیش‌نمایش، همگام‌سازی و بازگردانی همراه با نتیجه تک‌تک رکوردها اینجا ثبت می‌شود."
+
+#: views/logs.php:20
+msgid "Info"
+msgstr "اطلاعات"
+
+#: views/logs.php:21
+msgid "Warning"
+msgstr "هشدار"
+
+#: views/logs.php:22
+msgid "Error"
+msgstr "خطا"
+
+#: views/logs.php:23
+msgid "Debug"
+msgstr "اشکال‌زدایی"
+
+#. translators: %d: number of days.
+#: views/logs.php:29
+#, php-format
+msgid "Logs are kept for %d days (see Settings). Credentials and full URLs are never logged."
+msgstr "گزارش‌ها %d روز نگهداری می‌شوند (تنظیمات را ببینید). اطلاعات ورود و نشانی‌های کامل هرگز ثبت نمی‌شوند."
+
+#: views/logs.php:34
+#: views/logs.php:55
+msgid "Level"
+msgstr "سطح"
+
+#: views/logs.php:41
+msgid "Run ID"
+msgstr "شناسه اجرا"
+
+#: views/logs.php:43
+msgid "Search logs"
+msgstr "جستجوی گزارش‌ها"
+
+#: views/logs.php:44
+msgid "Search…"
+msgstr "جستجو…"
+
+#: views/logs.php:48
+msgid "No log entries"
+msgstr "گزارشی وجود ندارد"
+
+#: views/logs.php:48
+msgid "Synchronization events, warnings and errors will appear here."
+msgstr "رویدادها، هشدارها و خطاهای همگام‌سازی اینجا نمایش داده می‌شوند."
+
+#: views/logs.php:56
+#: views/partial-runs-table.php:22
+msgid "Run"
+msgstr "اجرا"
+
+#: views/logs.php:57
+#: views/run-detail.php:45
+msgid "Message"
+msgstr "پیام"
+
+#: views/logs.php:58
+msgid "Context"
+msgstr "جزئیات فنی"
+
+#: views/mapping.php:23
+#: views/schedule.php:35
+msgid "No data source"
+msgstr "منبع داده‌ای وجود ندارد"
+
+#: views/mapping.php:23
+msgid "Add a data source first; its columns are detected automatically."
+msgstr "ابتدا یک منبع داده اضافه کنید؛ ستون‌های آن به‌طور خودکار شناسایی می‌شوند."
+
+#: views/mapping.php:23
+#: views/schedule.php:35
+#: views/source-form.php:22
+#: views/sources.php:18
+#: views/sources.php:26
+#: views/sync.php:30
+msgid "Add data source"
+msgstr "افزودن منبع داده"
+
+#: views/mapping.php:31
+#: views/schedule.php:44
+#: views/sync.php:40
+msgid "Data source"
+msgstr "منبع داده"
+
+#: views/mapping.php:37
+msgid "Select"
+msgstr "انتخاب"
+
+#: views/mapping.php:41
+msgid "Detected columns"
+msgstr "ستون‌های شناسایی‌شده"
+
+#: views/mapping.php:43
+msgid "No columns detected yet."
+msgstr "هنوز ستونی شناسایی نشده است."
+
+#: views/mapping.php:55
+msgid "Reading source…"
+msgstr "در حال خواندن منبع…"
+
+#: views/mapping.php:55
+msgid "Re-read columns from source"
+msgstr "خواندن دوباره ستون‌ها از منبع"
+
+#: views/mapping.php:61
+msgid "Map columns to WooCommerce fields"
+msgstr "نگاشت ستون‌ها به فیلدهای ووکامرس"
+
+#: views/mapping.php:63
+msgid "A mapping was suggested from the column names. Review it and save."
+msgstr "بر اساس نام ستون‌ها یک نگاشت پیشنهاد شد. آن را بررسی و ذخیره کنید."
+
+#: views/mapping.php:65
+msgid "The mapping is incomplete: map SKU and enable at least one field."
+msgstr "نگاشت ناقص است: SKU را نگاشت کرده و دست‌کم یک فیلد را فعال کنید."
+
+#: views/mapping.php:74
+#: views/sources.php:79
+msgid "Synchronize"
+msgstr "همگام‌سازی"
+
+#: views/mapping.php:75
+msgid "WooCommerce field"
+msgstr "فیلد ووکامرس"
+
+#: views/mapping.php:76
+msgid "Source column"
+msgstr "ستون منبع"
+
+#: views/mapping.php:77
+msgid "Example value"
+msgstr "مقدار نمونه"
+
+#: views/mapping.php:91
+msgid "Always used for matching"
+msgstr "همیشه برای تطبیق استفاده می‌شود"
+
+#. translators: %s: field label.
+#: views/mapping.php:97
+#, php-format
+msgid "Synchronize %s"
+msgstr "همگام‌سازی %s"
+
+#: views/mapping.php:105
+msgid "— Not mapped —"
+msgstr "— نگاشت نشده —"
+
+#: views/mapping.php:117
+msgid "Only enabled fields are ever written. Products are matched by exact SKU (simple products and variations); unmatched rows are reported and no products are created."
+msgstr "فقط فیلدهای فعال نوشته می‌شوند. محصولات بر اساس SKU دقیق (محصولات ساده و متغیرها) تطبیق داده می‌شوند؛ ردیف‌های بدون تطبیق گزارش می‌شوند و هیچ محصولی ساخته نمی‌شود."
+
+#: views/mapping.php:119
+msgid "Save mapping"
+msgstr "ذخیره نگاشت"
+
+#: views/mapping.php:121
+msgid "Go to synchronization"
+msgstr "رفتن به همگام‌سازی"
+
+#: views/mapping.php:128
+msgid "Source preview (first rows)"
+msgstr "پیش‌نمایش منبع (ردیف‌های نخست)"
+
+#: views/partial-changes.php:28
+msgid "changed to"
+msgstr "تغییر کرد به"
+
+#: views/partial-items.php:24
+msgid "Record results"
+msgstr "نتایج رکوردها"
+
+#: views/partial-items.php:49
+msgid "Reason"
+msgstr "دلیل"
+
+#: views/partial-items.php:56
+msgid "Search SKU"
+msgstr "جستجوی SKU"
+
+#: views/partial-items.php:57
+msgid "Search SKU…"
+msgstr "جستجوی SKU…"
+
+#: views/partial-items.php:66
+msgid "Results appear here as records are processed."
+msgstr "نتایج با پردازش رکوردها اینجا نمایش داده می‌شوند."
+
+#: views/partial-items.php:67
+msgid "No records match the current filter."
+msgstr "هیچ رکوردی با فیلتر فعلی مطابقت ندارد."
+
+#: views/partial-items.php:76
+msgid "Row"
+msgstr "ردیف"
+
+#: views/partial-items.php:78
+msgid "Product"
+msgstr "محصول"
+
+#: views/partial-items.php:79
+msgid "Result"
+msgstr "نتیجه"
+
+#: views/partial-items.php:81
+#: views/partial-progress.php:51
+msgid "Details"
+msgstr "جزئیات"
+
+#. translators: 1: run id, 2: mode, 3: source name.
+#: views/partial-progress.php:23
+#, php-format
+msgid "Run #%1$d — %2$s — %3$s"
+msgstr "اجرای #%1$d — %2$s — %3$s"
+
+#. translators: 1: run id, 2: mode, 3: source name.
+#: views/partial-progress.php:23
+#: views/partial-runs-table.php:49
+#: views/run-detail.php:33
+msgid "(deleted source)"
+msgstr "(منبع حذف‌شده)"
+
+#: views/partial-progress.php:28
+msgid "Synchronization progress"
+msgstr "پیشرفت همگام‌سازی"
+
+#. translators: 1: processed, 2: total.
+#: views/partial-progress.php:36
+#, php-format
+msgid "%1$s of %2$s records"
+msgstr "%1$s از %2$s رکورد"
+
+#: views/partial-progress.php:50
+#: views/run-detail.php:78
+#: views/source-form.php:225
+msgid "Cancel"
+msgstr "لغو"
+
+#: views/partial-runs-table.php:27
+#: views/run-detail.php:36
+msgid "Trigger"
+msgstr "آغازگر"
+
+#: views/partial-runs-table.php:28
+msgid "Started"
+msgstr "آغاز"
+
+#: views/partial-runs-table.php:29
+msgid "Finished"
+msgstr "پایان"
+
+#: views/partial-runs-table.php:30
+msgid "Total"
+msgstr "مجموع"
+
+#: views/partial-runs-table.php:46
+#: views/run-detail.php:32
+msgid "Execution ID"
+msgstr "شناسه اجرا"
+
+#. translators: %d: run id.
+#: views/run-detail.php:18
+#, php-format
+msgid "Run #%d"
+msgstr "اجرای #%d"
+
+#: views/run-detail.php:22
+msgid "Back to history"
+msgstr "بازگشت به تاریخچه"
+
+#: views/run-detail.php:29
+msgid "Summary"
+msgstr "خلاصه"
+
+#: views/run-detail.php:37
+msgid "Start time"
+msgstr "زمان آغاز"
+
+#: views/run-detail.php:38
+msgid "End time"
+msgstr "زمان پایان"
+
+#: views/run-detail.php:39
+msgid "Total records"
+msgstr "تعداد کل رکوردها"
+
+#: views/run-detail.php:40
+msgid "Would be updated"
+msgstr "به‌روزرسانی خواهد شد"
+
+#: views/run-detail.php:40
+msgid "Successful updates"
+msgstr "به‌روزرسانی‌های موفق"
+
+#: views/run-detail.php:42
+msgid "Skipped records"
+msgstr "رکوردهای ردشده"
+
+#: views/run-detail.php:43
+msgid "Failed records"
+msgstr "رکوردهای ناموفق"
+
+#: views/run-detail.php:48
+msgid "Rolled back run"
+msgstr "اجرای بازگردانده‌شده"
+
+#: views/run-detail.php:48
+msgid "Based on preview"
+msgstr "بر پایه پیش‌نمایش"
+
+#: views/run-detail.php:51
+msgid "Rolled back by"
+msgstr "بازگردانده‌شده توسط"
+
+#: views/run-detail.php:58
+msgid "Restore the previous values of all products updated by this run? Products changed since then are skipped."
+msgstr "مقادیر قبلی همه محصولاتی که این اجرا به‌روز کرده بازگردانده شود؟ محصولاتی که پس از آن تغییر کرده‌اند رد می‌شوند."
+
+#: views/run-detail.php:62
+msgid "Roll back this run"
+msgstr "بازگردانی این اجرا"
+
+#: views/run-detail.php:70
+msgid "Resume"
+msgstr "ادامه"
+
+#: views/run-detail.php:82
+msgid "Review and apply"
+msgstr "بررسی و اعمال"
+
+#: views/run-detail.php:88
+msgid "Export results (CSV)"
+msgstr "خروجی نتایج (CSV)"
+
+#: views/run-detail.php:90
+msgid "View logs"
+msgstr "مشاهده گزارش‌ها"
+
+#: views/schedule.php:22
+msgid "Scheduled synchronizations apply changes directly (no preview) using the current mapping and settings. A source is never synchronized twice at the same time; if a run is still active, the scheduled run is skipped and logged."
+msgstr "همگام‌سازی‌های زمان‌بندی‌شده تغییرات را مستقیماً (بدون پیش‌نمایش) و با نگاشت و تنظیمات فعلی اعمال می‌کنند. یک منبع هرگز هم‌زمان دو بار همگام‌سازی نمی‌شود؛ اگر اجرایی هنوز فعال باشد، اجرای زمان‌بندی‌شده رد و ثبت می‌شود."
+
+#: views/schedule.php:28
+msgid "Runner: WooCommerce Action Scheduler."
+msgstr "اجراکننده: Action Scheduler ووکامرس."
+
+#: views/schedule.php:29
+msgid "Runner: WP-Cron. On low-traffic sites, configure a real server cron job that calls wp-cron.php for reliable timing."
+msgstr "اجراکننده: WP-Cron. در سایت‌های کم‌بازدید، برای زمان‌بندی دقیق یک کرون‌جاب واقعی روی سرور برای فراخوانی wp-cron.php تنظیم کنید."
+
+#: views/schedule.php:35
+msgid "Add a data source before scheduling."
+msgstr "پیش از زمان‌بندی یک منبع داده اضافه کنید."
+
+#: views/schedule.php:45
+msgid "Frequency"
+msgstr "تناوب"
+
+#: views/schedule.php:46
+msgid "Next run"
+msgstr "اجرای بعدی"
+
+#: views/schedule.php:65
+#: views/sources.php:61
+msgid "Ready"
+msgstr "آماده"
+
+#: views/schedule.php:67
+msgid "Source disabled"
+msgstr "منبع غیرفعال"
+
+#: views/schedule.php:69
+msgid "Mapping incomplete"
+msgstr "نگاشت ناقص"
+
+#: views/schedule.php:77
+msgid "Save schedules"
+msgstr "ذخیره زمان‌بندی‌ها"
+
+#: views/settings.php:35
+msgid "Pricing rules"
+msgstr "قوانین قیمت‌گذاری"
+
+#: views/settings.php:36
+msgid "Final price = supplier price × source multiplier × (1 + margin %), then rounded and limited to the min/max range."
+msgstr "قیمت نهایی = قیمت تأمین‌کننده × ضریب منبع × (۱ + درصد سود)، سپس گرد شده و به بازه حداقل/حداکثر محدود می‌شود."
+
+#: views/settings.php:39
+msgid "Profit margin (%)"
+msgstr "درصد سود (%)"
+
+#: views/settings.php:43
+msgid "Minimum price"
+msgstr "حداقل قیمت"
+
+#: views/settings.php:44
+#: views/settings.php:48
+msgid "No limit"
+msgstr "بدون محدودیت"
+
+#: views/settings.php:47
+msgid "Maximum price"
+msgstr "حداکثر قیمت"
+
+#: views/settings.php:51
+msgid "When a price is out of range"
+msgstr "وقتی قیمت خارج از بازه است"
+
+#: views/settings.php:54
+msgid "Use the nearest limit"
+msgstr "استفاده از نزدیک‌ترین حد"
+
+#: views/settings.php:55
+msgid "Do not update the price"
+msgstr "قیمت به‌روزرسانی نشود"
+
+#: views/settings.php:60
+msgid "Rounding"
+msgstr "گرد کردن"
+
+#: views/settings.php:65
+msgid "No rounding (store decimals)"
+msgstr "بدون گرد کردن (ذخیره اعشار)"
+
+#: views/settings.php:77
+msgid "Rounding direction"
+msgstr "جهت گرد کردن"
+
+#: views/settings.php:79
+msgid "Nearest"
+msgstr "نزدیک‌ترین"
+
+#: views/settings.php:80
+msgid "Up"
+msgstr "رو به بالا"
+
+#: views/settings.php:81
+msgid "Down"
+msgstr "رو به پایین"
+
+#: views/settings.php:86
+#: views/source-form.php:212
+msgid "Options"
+msgstr "گزینه‌ها"
+
+#: views/settings.php:89
+msgid "Apply margin and limits to sale prices too"
+msgstr "اعمال سود و محدودیت‌ها روی قیمت ویژه"
+
+#: views/settings.php:90
+msgid "Accept zero prices from the source"
+msgstr "پذیرش قیمت صفر از منبع"
+
+#: views/settings.php:91
+msgid "Accept negative stock quantities"
+msgstr "پذیرش موجودی منفی"
+
+#: views/settings.php:99
+msgid "Category rules"
+msgstr "قوانین دسته‌بندی"
+
+#: views/settings.php:100
+msgid "Override the margin and limits per product category. Rules are checked from top to bottom; the first rule matching a product (or its parent category, when enabled) is used. Variations use their parent product’s categories. Empty fields fall back to the global values."
+msgstr "درصد سود و محدودیت‌ها را برای هر دسته محصول جداگانه تعیین کنید. قوانین از بالا به پایین بررسی می‌شوند و نخستین قانونی که با محصول (یا در صورت فعال بودن، دسته مادر آن) منطبق باشد اعمال می‌شود. متغیرها از دسته‌های محصول مادر خود استفاده می‌کنند. فیلدهای خالی از مقادیر عمومی پیروی می‌کنند."
+
+#: views/settings.php:102
+msgid "No product categories exist yet."
+msgstr "هنوز هیچ دسته محصولی وجود ندارد."
+
+#: views/settings.php:108
+#: views/settings.php:131
+msgid "Category"
+msgstr "دسته"
+
+#: views/settings.php:109
+#: views/settings.php:139
+msgid "Margin (%)"
+msgstr "سود (%)"
+
+#: views/settings.php:110
+#: views/settings.php:140
+msgid "Min price"
+msgstr "حداقل قیمت"
+
+#: views/settings.php:111
+#: views/settings.php:141
+msgid "Max price"
+msgstr "حداکثر قیمت"
+
+#: views/settings.php:112
+#: views/settings.php:142
+msgid "Include subcategories"
+msgstr "شامل زیردسته‌ها"
+
+#: views/settings.php:113
+#: views/settings.php:143
+msgid "Remove"
+msgstr "حذف"
+
+#: views/settings.php:133
+msgid "— Select —"
+msgstr "— انتخاب —"
+
+#: views/settings.php:149
+msgid "Add rule"
+msgstr "افزودن قانون"
+
+#: views/settings.php:154
+msgid "Processing"
+msgstr "پردازش"
+
+#: views/settings.php:157
+msgid "Batch size"
+msgstr "اندازه دسته"
+
+#: views/settings.php:158
+msgid "Records per batch. Lower it on slow hosts."
+msgstr "تعداد رکورد در هر دسته. در هاست‌های کند آن را کاهش دهید."
+
+#: views/settings.php:161
+msgid "Time per background slice (seconds)"
+msgstr "زمان هر بخش پس‌زمینه (ثانیه)"
+
+#: views/settings.php:165
+msgid "Maximum upload size (MB)"
+msgstr "حداکثر حجم بارگذاری (مگابایت)"
+
+#. translators: %s: server limit.
+#: views/settings.php:170
+#, php-format
+msgid "Server limit: %s"
+msgstr "محدودیت سرور: %s"
+
+#: views/settings.php:175
+msgid "Maximum remote download size (MB)"
+msgstr "حداکثر حجم دریافت از راه دور (مگابایت)"
+
+#: views/settings.php:179
+msgid "Remote request timeout (seconds)"
+msgstr "مهلت درخواست راه دور (ثانیه)"
+
+#: views/settings.php:183
+msgid "Consider a run stalled after (minutes)"
+msgstr "اجرا پس از این مدت متوقف‌شده تلقی شود (دقیقه)"
+
+#: views/settings.php:187
+msgid "Automatic resume attempts"
+msgstr "تعداد تلاش برای ادامه خودکار"
+
+#: views/settings.php:188
+msgid "After this many automatic resumes a stalled run is marked as interrupted."
+msgstr "پس از این تعداد ادامه خودکار، اجرای متوقف‌شده به‌عنوان قطع‌شده علامت می‌خورد."
+
+#: views/settings.php:194
+msgid "Retention and data"
+msgstr "نگهداری و داده‌ها"
+
+#: views/settings.php:197
+msgid "Keep logs for (days)"
+msgstr "نگهداری گزارش‌ها به مدت (روز)"
+
+#: views/settings.php:201
+msgid "Keep run history for (days)"
+msgstr "نگهداری تاریخچه اجراها به مدت (روز)"
+
+#: views/settings.php:202
+msgid "Runs older than this are deleted and can no longer be rolled back."
+msgstr "اجراهای قدیمی‌تر از این حذف می‌شوند و دیگر قابل بازگردانی نیستند."
+
+#: views/settings.php:205
+msgid "Uninstall"
+msgstr "حذف افزونه"
+
+#: views/settings.php:206
+msgid "Delete all plugin data (tables, settings, uploaded files) when the plugin is deleted"
+msgstr "حذف همه داده‌های افزونه (جدول‌ها، تنظیمات، فایل‌های بارگذاری‌شده) هنگام حذف افزونه"
+
+#: views/settings.php:211
+msgid "Save settings"
+msgstr "ذخیره تنظیمات"
+
+#: views/settings.php:214
+msgid "Delete logs and runs older than the retention periods now?"
+msgstr "گزارش‌ها و اجراهای قدیمی‌تر از دوره نگهداری اکنون حذف شوند؟"
+
+#: views/settings.php:215
+msgid "Maintenance"
+msgstr "نگهداری"
+
+#: views/settings.php:218
+msgid "Cleanup runs automatically once a day."
+msgstr "پاک‌سازی روزی یک بار به‌طور خودکار انجام می‌شود."
+
+#: views/settings.php:219
+msgid "Run cleanup now"
+msgstr "اجرای پاک‌سازی اکنون"
+
+#: views/source-form.php:22
+msgid "Edit data source"
+msgstr "ویرایش منبع داده"
+
+#: views/source-form.php:30
+msgid "General"
+msgstr "عمومی"
+
+#: views/source-form.php:33
+#: views/sources.php:38
+msgid "Name"
+msgstr "نام"
+
+#: views/source-form.php:34
+msgid "e.g. Main supplier price list"
+msgstr "مثلاً لیست قیمت تأمین‌کننده اصلی"
+
+#: views/source-form.php:37
+msgid "Source type"
+msgstr "نوع منبع"
+
+#: views/source-form.php:45
+msgid "The type cannot be changed after creation. Create a new source instead."
+msgstr "نوع پس از ساخت قابل تغییر نیست. به‌جای آن یک منبع جدید بسازید."
+
+#: views/source-form.php:48
+msgid "Excel (XLSX) files require the PHP zip and xmlreader extensions, which are not available on this server."
+msgstr "فایل‌های اکسل (XLSX) به افزونه‌های zip و xmlreader در PHP نیاز دارند که روی این سرور در دسترس نیستند."
+
+#: views/source-form.php:56
+msgid "Disabled sources cannot be synchronized manually or by schedule."
+msgstr "منابع غیرفعال نه به‌صورت دستی و نه زمان‌بندی‌شده همگام‌سازی نمی‌شوند."
+
+#: views/source-form.php:63
+msgid "File"
+msgstr "فایل"
+
+#: views/source-form.php:66
+msgid "Upload file"
+msgstr "بارگذاری فایل"
+
+#. translators: %s: maximum size.
+#: views/source-form.php:72
+#, php-format
+msgid "CSV (.csv) or Excel (.xlsx). Maximum size: %s. The first row must contain column names."
+msgstr "CSV (‎.csv) یا اکسل (‎.xlsx). حداکثر حجم: %s. ردیف نخست باید شامل نام ستون‌ها باشد."
+
+#. translators: %s: file name.
+#: views/source-form.php:79
+#, php-format
+msgid "Current file: %s (upload a new one to replace it)."
+msgstr "فایل فعلی: %s (برای جایگزینی، فایل جدیدی بارگذاری کنید)."
+
+#: views/source-form.php:89
+msgid "Remote address"
+msgstr "نشانی راه دور"
+
+#: views/source-form.php:92
+msgid "URL"
+msgstr "نشانی (URL)"
+
+#: views/source-form.php:96
+msgid "Only public http/https addresses are allowed. Private, local and reserved network addresses are blocked."
+msgstr "فقط نشانی‌های عمومی http/https مجاز هستند. نشانی‌های شبکه خصوصی، محلی و رزروشده مسدود می‌شوند."
+
+#. translators: %s: masked URL.
+#: views/source-form.php:101
+#, php-format
+msgid "Saved address: %s — leave empty to keep it."
+msgstr "نشانی ذخیره‌شده: %s — برای حفظ آن خالی بگذارید."
+
+#: views/source-form.php:108
+msgid "Authentication"
+msgstr "احراز هویت"
+
+#: views/source-form.php:113
+msgid "None"
+msgstr "هیچ"
+
+#: views/source-form.php:114
+msgid "Bearer token"
+msgstr "توکن Bearer"
+
+#: views/source-form.php:115
+msgid "Username and password (Basic)"
+msgstr "نام کاربری و رمز عبور (Basic)"
+
+#: views/source-form.php:116
+msgid "Custom header (API key)"
+msgstr "سرآیند سفارشی (کلید API)"
+
+#: views/source-form.php:126
+msgid "Username"
+msgstr "نام کاربری"
+
+#: views/source-form.php:130
+msgid "Header name"
+msgstr "نام سرآیند"
+
+#: views/source-form.php:134
+msgid "Token / password"
+msgstr "توکن / رمز عبور"
+
+#: views/source-form.php:141
+msgid "A credential is stored (encrypted). Leave empty to keep it."
+msgstr "یک اطلاعات ورود (رمزنگاری‌شده) ذخیره شده است. برای حفظ آن خالی بگذارید."
+
+#: views/source-form.php:142
+msgid "Stored encrypted and never shown or logged."
+msgstr "به‌صورت رمزنگاری‌شده ذخیره می‌شود و هرگز نمایش داده یا ثبت نمی‌شود."
+
+#: views/source-form.php:149
+msgid "Records path (JSON)"
+msgstr "مسیر رکوردها (JSON)"
+
+#: views/source-form.php:152
+msgid "Dot path to the list of products in the JSON response. Leave empty when the response itself is a list."
+msgstr "مسیر نقطه‌دار تا فهرست محصولات در پاسخ JSON. اگر خود پاسخ یک فهرست است، خالی بگذارید."
+
+#: views/source-form.php:159
+msgid "Format and values"
+msgstr "قالب و مقادیر"
+
+#: views/source-form.php:162
+msgid "CSV delimiter"
+msgstr "جداکننده CSV"
+
+#: views/source-form.php:167
+#: views/source-form.php:184
+msgid "Detect automatically"
+msgstr "تشخیص خودکار"
+
+#: views/source-form.php:168
+msgid "Comma (,)"
+msgstr "ویرگول (,)"
+
+#: views/source-form.php:169
+msgid "Semicolon (;)"
+msgstr "نقطه‌ویرگول (;)"
+
+#: views/source-form.php:170
+msgid "Tab"
+msgstr "تب"
+
+#: views/source-form.php:171
+msgid "Pipe (|)"
+msgstr "خط عمودی (|)"
+
+#: views/source-form.php:181
+msgid "Text encoding"
+msgstr "رمزگذاری متن"
+
+#: views/source-form.php:186
+msgid "Windows-1256 (Persian/Arabic Excel)"
+msgstr "Windows-1256 (اکسل فارسی/عربی)"
+
+#: views/source-form.php:191
+msgid "Worksheet number"
+msgstr "شماره کاربرگ"
+
+#: views/source-form.php:195
+msgid "Decimal separator"
+msgstr "جداکننده اعشار"
+
+#: views/source-form.php:198
+msgid "Dot — 1,250,000.50"
+msgstr "نقطه — 1,250,000.50"
+
+#: views/source-form.php:199
+msgid "Comma — 1.250.000,50"
+msgstr "ویرگول — 1.250.000,50"
+
+#: views/source-form.php:201
+msgid "Persian digits (۰–۹) and separators are converted automatically."
+msgstr "ارقام فارسی (۰–۹) و جداکننده‌ها به‌طور خودکار تبدیل می‌شوند."
+
+#: views/source-form.php:205
+msgid "Price multiplier"
+msgstr "ضریب قیمت"
+
+#: views/source-form.php:208
+msgid "Applied to supplier prices before the profit margin, e.g. 0.1 to convert Rial to Toman, or an exchange rate."
+msgstr "پیش از درصد سود روی قیمت تأمین‌کننده اعمال می‌شود؛ مثلاً 0.1 برای تبدیل ریال به تومان، یا نرخ ارز."
+
+#: views/source-form.php:215
+msgid "Remove the sale price when the source sale price is empty"
+msgstr "حذف قیمت ویژه وقتی قیمت ویژه منبع خالی است"
+
+#: views/source-form.php:216
+msgid "Enable stock management on products that do not manage stock yet when a quantity is received"
+msgstr "فعال کردن مدیریت موجودی برای محصولاتی که هنوز موجودی را مدیریت نمی‌کنند، هنگام دریافت تعداد"
+
+#: views/source-form.php:224
+msgid "Save changes"
+msgstr "ذخیره تغییرات"
+
+#: views/source-form.php:224
+msgid "Save and detect columns"
+msgstr "ذخیره و شناسایی ستون‌ها"
+
+#: views/sources.php:23
+msgid "No data sources yet"
+msgstr "هنوز منبع داده‌ای وجود ندارد"
+
+#: views/sources.php:24
+msgid "A data source is a CSV or Excel file you upload, or a CSV/JSON address of your supplier."
+msgstr "منبع داده یک فایل CSV یا اکسل است که بارگذاری می‌کنید، یا نشانی CSV/JSON تأمین‌کننده شما."
+
+#: views/sources.php:39
+msgid "Type"
+msgstr "نوع"
+
+#: views/sources.php:40
+msgid "Location"
+msgstr "محل"
+
+#: views/sources.php:41
+#: views/sources.php:78
+msgid "Mapping"
+msgstr "نگاشت"
+
+#: views/sources.php:43
+msgid "Last run"
+msgstr "آخرین اجرا"
+
+#: views/sources.php:44
+msgid "Actions"
+msgstr "عملیات"
+
+#: views/sources.php:63
+msgid "Configure"
+msgstr "پیکربندی"
+
+#: views/sources.php:73
+msgid "Never"
+msgstr "هرگز"
+
+#: views/sources.php:77
+msgid "Edit"
+msgstr "ویرایش"
+
+#: views/sources.php:80
+msgid "Delete this data source? Its history is kept."
+msgstr "این منبع داده حذف شود؟ تاریخچه آن حفظ می‌شود."
+
+#: views/sources.php:84
+msgid "Delete"
+msgstr "حذف"
+
+#: views/sync.php:30
+msgid "Nothing to synchronize yet"
+msgstr "هنوز چیزی برای همگام‌سازی وجود ندارد"
+
+#: views/sync.php:30
+msgid "Add a data source and map its columns first."
+msgstr "ابتدا یک منبع داده اضافه کرده و ستون‌های آن را نگاشت کنید."
+
+#: views/sync.php:32
+msgid "No source is ready"
+msgstr "هیچ منبعی آماده نیست"
+
+#: views/sync.php:32
+msgid "Every source needs an enabled status and a complete field mapping (SKU plus at least one field)."
+msgstr "هر منبع باید فعال باشد و نگاشت فیلد کامل (SKU و دست‌کم یک فیلد) داشته باشد."
+
+#: views/sync.php:32
+msgid "Open field mapping"
+msgstr "باز کردن نگاشت فیلدها"
+
+#: views/sync.php:35
+msgid "Start a synchronization"
+msgstr "آغاز همگام‌سازی"
+
+#: views/sync.php:36
+msgid "Recommended: run a preview first. It reads the source, matches SKUs and shows every change without saving anything. You can then confirm and apply exactly those changes."
+msgstr "توصیه: ابتدا پیش‌نمایش بگیرید. پیش‌نمایش منبع را می‌خواند، SKUها را تطبیق می‌دهد و همه تغییرات را بدون ذخیره چیزی نشان می‌دهد. سپس می‌توانید دقیقاً همان تغییرات را تأیید و اعمال کنید."
+
+#: views/sync.php:47
+msgid "Apply changes to products directly, without a preview?"
+msgstr "تغییرات بدون پیش‌نمایش مستقیماً روی محصولات اعمال شود؟"
+
+#: views/sync.php:47
+msgid "Synchronize now"
+msgstr "همگام‌سازی اکنون"
+
+#: views/sync.php:54
+msgid "Current run"
+msgstr "اجرای فعلی"
+
+#: views/sync.php:63
+msgid "This preview has already been applied."
+msgstr "این پیش‌نمایش قبلاً اعمال شده است."
+
+#: views/sync.php:64
+msgid "View the applied run"
+msgstr "مشاهده اجرای اعمال‌شده"
+
+#: views/sync.php:67
+msgid "Apply the previewed changes to your products now?"
+msgstr "تغییرات پیش‌نمایش‌شده اکنون روی محصولات شما اعمال شود؟"
+
+#. translators: %s: number of products.
+#: views/sync.php:74
+#, php-format
+msgid "%s product will be updated. Review the changes below, then confirm."
+msgid_plural "%s products will be updated. Review the changes below, then confirm."
+msgstr[0] "%s محصول به‌روزرسانی خواهد شد. تغییرات زیر را بررسی و سپس تأیید کنید."
+
+#: views/sync.php:77
+msgid "Confirm and apply changes"
+msgstr "تأیید و اعمال تغییرات"
+
+#: views/sync.php:80
+msgid "The preview found nothing to change."
+msgstr "پیش‌نمایش چیزی برای تغییر پیدا نکرد."
+
+#. translators: 1: processed, 2: reverted, 3: skipped, 4: failed.
+#: src/Sync/SyncEngine.php:394
+#, php-format
+msgid "Rollback of %1$d products: %2$d reverted, %3$d skipped, %4$d failed."
+msgstr "بازگردانی %1$d محصول: %2$d بازگردانده‌شده، %3$d ردشده، %4$d ناموفق."
