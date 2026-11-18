@@ -9,16 +9,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-17T09:03:26+00:00\n"
+"POT-Creation-Date: 2026-11-18T11:05:24+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: micro-sync-pro\n"
 
 #. Plugin Name of the plugin
 #: micro-sync-pro.php
+#: micro-sync-pro.php:67
 #: src/Admin/Admin.php:52
 #: src/Admin/Admin.php:71
 #: src/Dependencies.php:45
+#: src/Plugin.php:157
 #: views/dashboard.php:21
 msgid "Micro Sync Pro"
 msgstr ""
@@ -42,6 +44,10 @@ msgstr ""
 #: micro-sync-pro.php:37
 #, php-format
 msgid "Micro Sync Pro requires PHP %s or newer. The plugin is not running."
+msgstr ""
+
+#: micro-sync-pro.php:68
+msgid "Micro Sync Pro needs the ionCube Loader PHP extension to verify its license. Ask your host to enable ionCube Loader for your PHP version. The plugin is inactive until then."
 msgstr ""
 
 #: src/Admin/Actions.php:74
@@ -594,6 +600,14 @@ msgstr ""
 
 #: src/Parser/XlsxParser.php:288
 msgid "The workbook contains too many distinct text values."
+msgstr ""
+
+#: src/Plugin.php:153
+msgid "The Micro Sync Pro license file is missing. Reinstall the plugin from the original package. The plugin is inactive until then."
+msgstr ""
+
+#: src/Plugin.php:155
+msgid "The Micro Sync Pro license is not active. Activate your license from your Rtl-Theme account to use the plugin."
 msgstr ""
 
 #. translators: 1: price, 2: min, 3: max.

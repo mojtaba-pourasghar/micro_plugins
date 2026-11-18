@@ -62,6 +62,19 @@ final class Plugin {
 	private $booted = false;
 
 	/**
+	 * Key passed by the protected license check (license.php) to unlock the plugin.
+	 * This file is protected together with license.php, so the key is not readable.
+	 */
+	const UNLOCK_KEY = '003c2d08bf4929e5ab5b32220999e66b985c4ae6';
+
+	/**
+	 * Whether an active RTL-Theme license unlocked the plugin.
+	 *
+	 * @var bool
+	 */
+	private $licensed = false;
+
+	/**
 	 * Get the singleton.
 	 */
 	public static function instance(): Plugin {
@@ -85,6 +98,11 @@ final class Plugin {
 		// Schema upgrades run regardless of WooCommerce state (tables are ours).
 		Migrator::maybe_upgrade();
 
+		if ( ! $this->licensed ) {
+			add_action( 'admin_notices', array( $this, 'render_license_notice' ) );
+			return;
+		}
+
 		if ( ! Dependencies::woocommerce_ready() ) {
 			add_action( 'admin_notices', array( Dependencies::class, 'render_missing_notice' ) );
 			return;
@@ -104,6 +122,39 @@ final class Plugin {
 		 * @param Plugin $plugin Plugin instance.
 		 */
 		do_action( 'micro_sync_pro_loaded', $this );
+	}
+
+	/**
+	 * Unlock the plugin. Called by the protected license check when the license is active.
+	 *
+	 * @param string $key Unlock key.
+	 */
+	public function unlock( string $key ): void {
+		if ( hash_equals( self::UNLOCK_KEY, $key ) ) {
+			$this->licensed = true;
+		}
+	}
+
+	/**
+	 * Whether the plugin is unlocked by an active license.
+	 */
+	public function is_licensed(): bool {
+		return $this->licensed;
+	}
+
+	/**
+	 * Admin notice shown while the plugin is locked.
+	 */
+	public function render_license_notice(): void {
+		if ( ! current_user_can( 'activate_plugins' ) ) {
+			return;
+		}
+		if ( ! is_file( MSP_DIR . 'RTL_License_1f777b937ec5d599.php' ) ) {
+			$message = __( 'The Micro Sync Pro license file is missing. Reinstall the plugin from the original package. The plugin is inactive until then.', 'micro-sync-pro' );
+		} else {
+			$message = __( 'The Micro Sync Pro license is not active. Activate your license from your Rtl-Theme account to use the plugin.', 'micro-sync-pro' );
+		}
+		echo '<div class="notice notice-warning"><p><strong>' . esc_html__( 'Micro Sync Pro', 'micro-sync-pro' ) . ':</strong> ' . esc_html( $message ) . '</p></div>';
 	}
 
 	/**

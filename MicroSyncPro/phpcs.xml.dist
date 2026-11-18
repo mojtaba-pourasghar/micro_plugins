@@ -4,6 +4,9 @@
 	<file>.</file>
 	<exclude-pattern>/vendor/*</exclude-pattern>
 	<exclude-pattern>/tests/*</exclude-pattern>
+	<!-- Vendor-supplied license files (encoded file and the verbatim RTL-Theme snippet). -->
+	<exclude-pattern>/RTL_License_*.php</exclude-pattern>
+	<exclude-pattern>/license.php</exclude-pattern>
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 	<arg name="extensions" value="php"/>
 	<arg value="sp"/>

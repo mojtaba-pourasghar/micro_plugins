@@ -52,4 +52,34 @@ register_deactivation_hook( __FILE__, array( \MicroStudio\MicroSyncPro\Deactivat
 // Declare WooCommerce feature compatibility (HPOS, cart/checkout blocks).
 add_action( 'before_woocommerce_init', array( \MicroStudio\MicroSyncPro\Compatibility::class, 'declare_features' ) );
 
+// The license file and the protected plugin files are ionCube-encoded. Without the
+// ionCube Loader, loading any of them prints an error and stops the request, which
+// would take the whole site down. In that case none of them is loaded: the plugin
+// stays inactive and only shows an admin notice.
+if ( ! extension_loaded( 'ionCube Loader' ) ) {
+	add_action(
+		'admin_notices',
+		static function () {
+			if ( ! current_user_can( 'activate_plugins' ) ) {
+				return;
+			}
+			load_plugin_textdomain( 'micro-sync-pro', false, dirname( plugin_basename( MSP_FILE ) ) . '/languages' );
+			echo '<div class="notice notice-error"><p><strong>' . esc_html__( 'Micro Sync Pro', 'micro-sync-pro' ) . ':</strong> '
+				. esc_html__( 'Micro Sync Pro needs the ionCube Loader PHP extension to verify its license. Ask your host to enable ionCube Loader for your PHP version. The plugin is inactive until then.', 'micro-sync-pro' )
+				. '</p></div>';
+		}
+	);
+	return;
+}
+
+// RTL-Theme license loader. This file is NOT protected (it contains the loader).
+$rtlLicenseFilePath = __DIR__ . DIRECTORY_SEPARATOR . 'RTL_License_1f777b937ec5d599.php'; // phpcs:ignore WordPress.NamingConventions.ValidVariableName
+
+if ( is_file( $rtlLicenseFilePath ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName
+	require_once $rtlLicenseFilePath; // phpcs:ignore WordPress.NamingConventions.ValidVariableName
+}
+
+// License check (protected file): unlocks the plugin when the license is active.
+require_once __DIR__ . '/license.php';
+
 add_action( 'plugins_loaded', array( \MicroStudio\MicroSyncPro\Plugin::instance(), 'boot' ), 20 );

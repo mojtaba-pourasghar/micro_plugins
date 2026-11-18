@@ -39,6 +39,11 @@ tests_add_filter(
 		} else {
 			require $msp_root . '/micro-sync-pro.php';
 		}
+		// The license class is ionCube-encoded and cannot run in CI; unlock for tests.
+		\MicroStudio\MicroSyncPro\Plugin::instance()->unlock( \MicroStudio\MicroSyncPro\Plugin::UNLOCK_KEY );
+		if ( ! has_action( 'plugins_loaded', array( \MicroStudio\MicroSyncPro\Plugin::instance(), 'boot' ) ) ) {
+			add_action( 'plugins_loaded', array( \MicroStudio\MicroSyncPro\Plugin::instance(), 'boot' ), 20 );
+		}
 	}
 );
 

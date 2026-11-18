@@ -16,9 +16,11 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: micro-sync-pro.php
+#: micro-sync-pro.php:67
 #: src/Admin/Admin.php:52
 #: src/Admin/Admin.php:71
 #: src/Dependencies.php:45
+#: src/Plugin.php:157
 #: views/dashboard.php:21
 msgid "Micro Sync Pro"
 msgstr "میکرو سینک پرو"
@@ -2129,3 +2131,15 @@ msgstr "پیش‌نمایش چیزی برای تغییر پیدا نکرد."
 #, php-format
 msgid "Rollback of %1$d products: %2$d reverted, %3$d skipped, %4$d failed."
 msgstr "بازگردانی %1$d محصول: %2$d بازگردانده‌شده، %3$d ردشده، %4$d ناموفق."
+
+#: micro-sync-pro.php:68
+msgid "Micro Sync Pro needs the ionCube Loader PHP extension to verify its license. Ask your host to enable ionCube Loader for your PHP version. The plugin is inactive until then."
+msgstr "میکرو سینک پرو برای بررسی لایسنس به افزونه ionCube Loader در PHP نیاز دارد. از پشتیبانی هاست بخواهید ionCube Loader را برای نسخه PHP شما فعال کند. تا آن زمان افزونه غیرفعال است."
+
+#: src/Plugin.php:153
+msgid "The Micro Sync Pro license file is missing. Reinstall the plugin from the original package. The plugin is inactive until then."
+msgstr "فایل لایسنس میکرو سینک پرو پیدا نشد. افزونه را از بسته اصلی دوباره نصب کنید. تا آن زمان افزونه غیرفعال است."
+
+#: src/Plugin.php:155
+msgid "The Micro Sync Pro license is not active. Activate your license from your Rtl-Theme account to use the plugin."
+msgstr "لایسنس میکرو سینک پرو فعال نیست. برای استفاده از افزونه، لایسنس خود را از حساب کاربری راست‌چین فعال کنید."
